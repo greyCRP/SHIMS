@@ -32,7 +32,6 @@ public class Homepage extends javax.swing.JFrame {
         CCSTname = new javax.swing.JLabel();
         ProjectName = new javax.swing.JLabel();
         Schoolportal = new javax.swing.JLabel();
-        BGLZ = new javax.swing.JLabel();
         LGText = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         LoginText = new javax.swing.JLabel();
@@ -50,6 +49,7 @@ public class Homepage extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        BGLZ = new javax.swing.JLabel();
         Contacts = new javax.swing.JLabel();
         login = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -61,8 +61,6 @@ public class Homepage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        CCSTlogo.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\CcstLogo.png")); // NOI18N
         getContentPane().add(CCSTlogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, -1, -1));
 
         CCSTname.setFont(new java.awt.Font("Serif", 1, 45)); // NOI18N
@@ -79,9 +77,6 @@ public class Homepage extends javax.swing.JFrame {
         Schoolportal.setForeground(new java.awt.Color(255, 255, 255));
         Schoolportal.setText("SCHOOL PORTAL");
         getContentPane().add(Schoolportal, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, -1, -1));
-
-        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
-        getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1920, 170));
 
         LGText.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         LGText.setText("Login to your account");
@@ -150,6 +145,9 @@ public class Homepage extends javax.swing.JFrame {
 
         jLabel11.setText("data, Privacy Notice and applicable laws.");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1640, 580, 240, -1));
+
+        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1920, 170));
 
         Contacts.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         Contacts.setForeground(new java.awt.Color(255, 255, 255));
