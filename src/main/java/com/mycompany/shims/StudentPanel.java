@@ -8,12 +8,12 @@ package com.mycompany.shims;
  *
  * @author dell
  */
-public class admin extends javax.swing.JFrame {
+public class StudentPanel extends javax.swing.JFrame {
 
     /**
-     * Creates new form admin
+     * Creates new form StudentPanel
      */
-    public admin() {
+    public StudentPanel() {
         initComponents();
     }
 
@@ -26,45 +26,19 @@ public class admin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         ProjectName = new javax.swing.JLabel();
         HomeButton = new javax.swing.JLabel();
         BGLZ = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Teacher Management");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 290, 70));
-
-        jButton2.setText("Student Management");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 290, 70));
-
-        jButton5.setText("Class Management");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 290, 70));
-
         ProjectName.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         ProjectName.setForeground(new java.awt.Color(255, 255, 255));
-        ProjectName.setText("SHIMS | ADMIN");
-        getContentPane().add(ProjectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        ProjectName.setText("SHIMS | STUDENT");
+        getContentPane().add(ProjectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         HomeButton.setForeground(new java.awt.Color(255, 255, 255));
         HomeButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
@@ -74,35 +48,24 @@ public class admin extends javax.swing.JFrame {
                 HomeButtonMouseClicked(evt);
             }
         });
-        getContentPane().add(HomeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1077, 10, 80, 40));
+        getContentPane().add(HomeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1830, 10, 80, 40));
 
         BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
-        getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, 60));
+        getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\image-removebg-preview (1).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, 570));
+        jButton1.setText("Schedule");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
+
+        jButton2.setText("Enrollment");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     private void HomeButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeButtonMouseClicked
 
         new Homepage().setVisible(true);
         this.dispose();
-
-
 
         // TODO add your handling code here:
     }//GEN-LAST:event_HomeButtonMouseClicked
@@ -124,20 +87,20 @@ public class admin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudentPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudentPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudentPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(admin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudentPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new admin().setVisible(true);
+                new StudentPanel().setVisible(true);
             }
         });
     }
@@ -148,7 +111,5 @@ public class admin extends javax.swing.JFrame {
     private javax.swing.JLabel ProjectName;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

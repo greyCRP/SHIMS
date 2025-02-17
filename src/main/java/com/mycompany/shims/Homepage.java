@@ -233,7 +233,7 @@ public class Homepage extends javax.swing.JFrame {
     private void LoginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginButtonMouseClicked
 
  
-        new Signup().setVisible(true);
+        new Login().setVisible(true);
         
 
 

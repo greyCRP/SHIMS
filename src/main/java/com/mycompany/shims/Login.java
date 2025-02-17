@@ -26,46 +26,113 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        ProjectName = new javax.swing.JLabel();
+        HomeButton = new javax.swing.JLabel();
+        BGLZ = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        PassT = new javax.swing.JPasswordField();
+        jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        ShowPassB = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
-        jLabel1.setText("Login");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        ProjectName.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+        ProjectName.setForeground(new java.awt.Color(255, 255, 255));
+        ProjectName.setText("SHIMS | Login");
+        getContentPane().add(ProjectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\logo (100).png")); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, -1, -1));
+        HomeButton.setForeground(new java.awt.Color(255, 255, 255));
+        HomeButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
+        HomeButton.setText("Home");
+        HomeButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HomeButtonMouseClicked(evt);
+            }
+        });
+        getContentPane().add(HomeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, -1, 40));
 
-        jLabel3.setText("Student ID no :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, -1, -1));
+        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 60));
 
-        jLabel4.setText("Student name :");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        jLabel3.setText("Student ID no");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
 
-        jLabel5.setText("Contact :");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, -1, -1));
+        jLabel4.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        jLabel4.setText("Password");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, -1, -1));
 
-        jLabel6.setText("Student ID no :");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 220, 30));
+        getContentPane().add(PassT, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 220, 30));
 
-        jLabel7.setText("Student name :");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+        jButton2.setText("LOGIN");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 130, 40));
 
-        jLabel8.setText("Contact :");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, -1));
+        jLabel1.setText("Register");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, 70, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, -1, -1));
+
+        ShowPassB.setText("Show Password");
+        ShowPassB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ShowPassBActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ShowPassB, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void HomeButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeButtonMouseClicked
+
+        new Homepage().setVisible(true);
+        this.dispose();
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HomeButtonMouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+
+        new Signup().setVisible(true);
+        this.dispose();
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void ShowPassBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowPassBActionPerformed
+    
+         if (ShowPassB.isSelected()){
+            PassT.setEchoChar((char)0);
+        }
+        else
+        PassT.setEchoChar('*');
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ShowPassBActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,13 +170,16 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BGLZ;
+    private javax.swing.JLabel HomeButton;
+    private javax.swing.JPasswordField PassT;
+    private javax.swing.JLabel ProjectName;
+    private javax.swing.JCheckBox ShowPassB;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
