@@ -40,20 +40,24 @@ public class Homepage extends javax.swing.JFrame {
         PassText = new javax.swing.JLabel();
         PassT = new javax.swing.JPasswordField();
         ShowPassB = new javax.swing.JCheckBox();
+        LoginButton = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        Contacts = new javax.swing.JLabel();
         login = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         LGB = new javax.swing.JLabel();
         BGG = new javax.swing.JLabel();
+        BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -106,6 +110,35 @@ public class Homepage extends javax.swing.JFrame {
         });
         getContentPane().add(ShowPassB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1760, 470, -1, -1));
 
+        LoginButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        LoginButton.setForeground(new java.awt.Color(255, 255, 255));
+        LoginButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\login.png")); // NOI18N
+        LoginButton.setText("Login");
+        LoginButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LoginButtonMouseClicked(evt);
+            }
+        });
+        getContentPane().add(LoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1830, 10, -1, -1));
+
+        jLabel3.setText("1.  Enter your Account Number and ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 860, -1, -1));
+
+        jLabel4.setText("Password then click the \"Login\" button.");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 880, -1, -1));
+
+        jLabel5.setText("button at the top right of the screen");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 950, -1, -1));
+
+        jLabel6.setText("2. If you are a new user click the \"Login\"");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 930, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
+        jLabel7.setText("SHIMS");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
         jLabel8.setText("By clicking the log-in button I recognize ");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 520, -1, -1));
 
@@ -117,6 +150,17 @@ public class Homepage extends javax.swing.JFrame {
 
         jLabel11.setText("data, Privacy Notice and applicable laws.");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1640, 580, 240, -1));
+
+        Contacts.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        Contacts.setForeground(new java.awt.Color(255, 255, 255));
+        Contacts.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\call.png")); // NOI18N
+        Contacts.setText("Contact Us");
+        Contacts.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ContactsMouseClicked(evt);
+            }
+        });
+        getContentPane().add(Contacts, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
 
         login.setText("Login");
         login.addActionListener(new java.awt.event.ActionListener() {
@@ -132,23 +176,14 @@ public class Homepage extends javax.swing.JFrame {
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 760, 260, 10));
         getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 820, 260, 10));
 
-        jLabel3.setText("1.  Enter your Account Number and ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 860, -1, -1));
-
-        jLabel4.setText("Password then click the \"Login\" button.");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 880, -1, -1));
-
-        jLabel6.setText("2. If you are a new user click the \"Login\"");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 930, -1, -1));
-
-        jLabel5.setText("button at the top right of the screen");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 950, -1, -1));
-
         LGB.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Light Khaki.jpg")); // NOI18N
         getContentPane().add(LGB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 250, 260, 760));
 
         BGG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Grey.jpg")); // NOI18N
         getContentPane().add(BGG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
+
+        BG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain White.jpg")); // NOI18N
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -195,6 +230,25 @@ public class Homepage extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_loginActionPerformed
 
+    private void LoginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginButtonMouseClicked
+
+ 
+        new Signup().setVisible(true);
+        
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LoginButtonMouseClicked
+
+    private void ContactsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ContactsMouseClicked
+
+    
+        new Contacts().setVisible(true);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ContactsMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -232,12 +286,15 @@ public class Homepage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField AccT;
+    private javax.swing.JLabel BG;
     private javax.swing.JLabel BGG;
     private javax.swing.JLabel BGLZ;
     private javax.swing.JLabel CCSTlogo;
     private javax.swing.JLabel CCSTname;
+    private javax.swing.JLabel Contacts;
     private javax.swing.JLabel LGB;
     private javax.swing.JLabel LGText;
+    private javax.swing.JLabel LoginButton;
     private javax.swing.JLabel LoginText;
     private javax.swing.JPasswordField PassT;
     private javax.swing.JLabel PassText;
@@ -251,6 +308,7 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
