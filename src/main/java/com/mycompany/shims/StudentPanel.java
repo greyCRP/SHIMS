@@ -112,6 +112,7 @@ public class StudentPanel extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         EnrollmentPanel = new java.awt.Panel();
+        jLabel37 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -563,9 +564,9 @@ public class StudentPanel extends javax.swing.JFrame {
                                 .addGap(15, 15, 15)
                                 .addComponent(txt23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(GradeComputerLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addGap(85, 85, 85)
                                 .addComponent(jLabel33)
                                 .addGap(11, 11, 11)
                                 .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -614,7 +615,6 @@ public class StudentPanel extends javax.swing.JFrame {
                                 .addGap(7, 7, 7)
                                 .addComponent(txt29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addContainerGap()
                                 .addComponent(jLabel32)
                                 .addGap(675, 675, 675)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -639,6 +639,9 @@ public class StudentPanel extends javax.swing.JFrame {
         EnrollmentPanel.setVisible(false);
         EnrollmentPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(EnrollmentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+
+        jLabel37.setText("jLabel37");
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -881,6 +884,7 @@ else if (res <= 74) {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
