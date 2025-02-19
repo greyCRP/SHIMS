@@ -33,6 +33,9 @@ public class admin extends javax.swing.JFrame {
         HomeButton = new javax.swing.JLabel();
         BGLZ = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        panel1 = new java.awt.Panel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -82,6 +85,39 @@ public class admin extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/image-removebg-preview (1).png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, 570));
 
+        panel1.setVisible(false);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Section", "Schedule"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(1).setMinWidth(500);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(500);
+            jTable1.getColumnModel().getColumn(1).setMaxWidth(500);
+        }
+
+        panel1.add(jScrollPane1);
+
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, 740, 560));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -91,6 +127,14 @@ public class admin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+
+        panel1.setVisible(true);
+        
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -151,5 +195,8 @@ public class admin extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private java.awt.Panel panel1;
     // End of variables declaration//GEN-END:variables
 }

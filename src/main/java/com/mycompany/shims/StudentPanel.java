@@ -112,6 +112,9 @@ public class StudentPanel extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         EnrollmentPanel = new java.awt.Panel();
+        jButton12 = new javax.swing.JButton();
+        Calendar = new java.awt.Panel();
+        GradeComputer2 = new java.awt.Panel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -169,6 +172,7 @@ public class StudentPanel extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 260, 70));
 
+        GradeComputer.setForeground(new java.awt.Color(255, 255, 255));
         GradeComputer.setVisible(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -639,6 +643,46 @@ public class StudentPanel extends javax.swing.JFrame {
         EnrollmentPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(EnrollmentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
 
+        jButton12.setText("Calendar");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 260, 70));
+
+        Calendar.setForeground(new java.awt.Color(255, 255, 255));
+        Calendar.setVisible(false);
+
+        javax.swing.GroupLayout CalendarLayout = new javax.swing.GroupLayout(Calendar);
+        Calendar.setLayout(CalendarLayout);
+        CalendarLayout.setHorizontalGroup(
+            CalendarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1590, Short.MAX_VALUE)
+        );
+        CalendarLayout.setVerticalGroup(
+            CalendarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 980, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(Calendar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+
+        GradeComputer2.setForeground(new java.awt.Color(255, 255, 255));
+        GradeComputer2.setVisible(false);
+
+        javax.swing.GroupLayout GradeComputer2Layout = new javax.swing.GroupLayout(GradeComputer2);
+        GradeComputer2.setLayout(GradeComputer2Layout);
+        GradeComputer2Layout.setHorizontalGroup(
+            GradeComputer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1590, Short.MAX_VALUE)
+        );
+        GradeComputer2Layout.setVerticalGroup(
+            GradeComputer2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 980, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(GradeComputer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -799,6 +843,10 @@ else if (res <= 74) {
       
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -836,12 +884,15 @@ else if (res <= 74) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BGLZ;
+    private java.awt.Panel Calendar;
     private java.awt.Panel EnrollmentPanel;
     private java.awt.Panel GradeComputer;
+    private java.awt.Panel GradeComputer2;
     private javax.swing.JLabel HomeButton;
     private javax.swing.JLabel ProjectName;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
