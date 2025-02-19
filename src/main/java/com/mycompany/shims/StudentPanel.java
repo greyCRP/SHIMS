@@ -112,7 +112,6 @@ public class StudentPanel extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         EnrollmentPanel = new java.awt.Panel();
-        jLabel37 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -123,7 +122,7 @@ public class StudentPanel extends javax.swing.JFrame {
         getContentPane().add(ProjectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         HomeButton.setForeground(new java.awt.Color(255, 255, 255));
-        HomeButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
+        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/home.png"))); // NOI18N
         HomeButton.setText("Home");
         HomeButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +131,7 @@ public class StudentPanel extends javax.swing.JFrame {
         });
         getContentPane().add(HomeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1830, 10, 80, 40));
 
-        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        BGLZ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Lapiz Lazuli.jpg"))); // NOI18N
         getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 60));
 
         jButton1.setText("Schedule");
@@ -640,9 +639,6 @@ public class StudentPanel extends javax.swing.JFrame {
         EnrollmentPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(EnrollmentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
 
-        jLabel37.setText("jLabel37");
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, -1, -1));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -884,7 +880,6 @@ else if (res <= 74) {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

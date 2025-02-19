@@ -40,6 +40,7 @@ public class Homepage extends javax.swing.JFrame {
         PassT = new javax.swing.JPasswordField();
         ShowPassB = new javax.swing.JCheckBox();
         LoginButton = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -107,7 +108,7 @@ public class Homepage extends javax.swing.JFrame {
 
         LoginButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         LoginButton.setForeground(new java.awt.Color(255, 255, 255));
-        LoginButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\login.png")); // NOI18N
+        LoginButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/login.png"))); // NOI18N
         LoginButton.setText("Login");
         LoginButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -115,6 +116,9 @@ public class Homepage extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1830, 10, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/image-removebg-preview (1)_1.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, -1, -1));
 
         jLabel3.setText("1.  Enter your Account Number and ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 860, -1, -1));
@@ -130,7 +134,7 @@ public class Homepage extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/home.png"))); // NOI18N
         jLabel7.setText("SHIMS");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
@@ -146,12 +150,12 @@ public class Homepage extends javax.swing.JFrame {
         jLabel11.setText("data, Privacy Notice and applicable laws.");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1640, 580, 240, -1));
 
-        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        BGLZ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Lapiz Lazuli.jpg"))); // NOI18N
         getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1920, 170));
 
         Contacts.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         Contacts.setForeground(new java.awt.Color(255, 255, 255));
-        Contacts.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\call.png")); // NOI18N
+        Contacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/call.png"))); // NOI18N
         Contacts.setText("Contact Us");
         Contacts.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -174,13 +178,13 @@ public class Homepage extends javax.swing.JFrame {
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 760, 260, 10));
         getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 820, 260, 10));
 
-        LGB.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Light Khaki.jpg")); // NOI18N
+        LGB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Light Khaki.jpg"))); // NOI18N
         getContentPane().add(LGB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1630, 250, 260, 760));
 
-        BGG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Grey.jpg")); // NOI18N
+        BGG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Grey.jpg"))); // NOI18N
         getContentPane().add(BGG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
 
-        BG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain White.jpg")); // NOI18N
+        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain White.jpg"))); // NOI18N
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1080));
 
         pack();
@@ -299,6 +303,7 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel ProjectName;
     private javax.swing.JLabel Schoolportal;
     private javax.swing.JCheckBox ShowPassB;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;

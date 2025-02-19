@@ -27,26 +27,30 @@ public class Contacts extends javax.swing.JFrame {
     private void initComponents() {
 
         CCSTlogo = new javax.swing.JLabel();
-        LoginButton = new javax.swing.JLabel();
         CCSTname = new javax.swing.JLabel();
+        LoginButton = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         ProjectName = new javax.swing.JLabel();
         Schoolportal = new javax.swing.JLabel();
-        Home = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        BGG = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         BGLZ = new javax.swing.JLabel();
+        BGG = new javax.swing.JLabel();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        CCSTlogo.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\CcstLogo.png")); // NOI18N
         getContentPane().add(CCSTlogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, -1, -1));
+
+        CCSTname.setFont(new java.awt.Font("Serif", 1, 45)); // NOI18N
+        CCSTname.setForeground(new java.awt.Color(255, 255, 255));
+        CCSTname.setText("Clark College of Science and Technology");
+        getContentPane().add(CCSTname, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, -1, -1));
 
         LoginButton.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
         LoginButton.setForeground(new java.awt.Color(255, 255, 255));
-        LoginButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\login.png")); // NOI18N
+        LoginButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/login.png"))); // NOI18N
         LoginButton.setText("Login");
         LoginButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -55,10 +59,11 @@ public class Contacts extends javax.swing.JFrame {
         });
         getContentPane().add(LoginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1830, 10, -1, -1));
 
-        CCSTname.setFont(new java.awt.Font("Serif", 1, 45)); // NOI18N
-        CCSTname.setForeground(new java.awt.Color(255, 255, 255));
-        CCSTname.setText("Clark College of Science and Technology");
-        getContentPane().add(CCSTname, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 60, -1, -1));
+        jLabel7.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/home.png"))); // NOI18N
+        jLabel7.setText("SHIMS");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         ProjectName.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         ProjectName.setForeground(new java.awt.Color(255, 255, 255));
@@ -70,17 +75,6 @@ public class Contacts extends javax.swing.JFrame {
         Schoolportal.setText("SCHOOL PORTAL");
         getContentPane().add(Schoolportal, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, -1, -1));
 
-        Home.setFont(new java.awt.Font("Serif", 0, 14)); // NOI18N
-        Home.setForeground(new java.awt.Color(255, 255, 255));
-        Home.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
-        Home.setText("SHIMS");
-        Home.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HomeMouseClicked(evt);
-            }
-        });
-        getContentPane().add(Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Mobile Contact : 0968 565 1422");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, -1, -1));
@@ -89,11 +83,14 @@ public class Contacts extends javax.swing.JFrame {
         jLabel2.setText("Address : SNS Building Aurea St. Samsonville Subd., 2010  ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
 
-        BGG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Grey.jpg")); // NOI18N
-        getContentPane().add(BGG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/image-removebg-preview (1)_1.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, -1, -1));
 
-        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        BGLZ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Lapiz Lazuli.jpg"))); // NOI18N
         getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1920, 170));
+
+        BGG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Grey.jpg"))); // NOI18N
+        getContentPane().add(BGG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
 
         BG.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain White.jpg")); // NOI18N
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1080));
@@ -107,15 +104,6 @@ public class Contacts extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_LoginButtonMouseClicked
-
-    private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
-
-
-        new Homepage().setVisible(true);
-        this.dispose();
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HomeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -158,11 +146,12 @@ public class Contacts extends javax.swing.JFrame {
     private javax.swing.JLabel BGLZ;
     private javax.swing.JLabel CCSTlogo;
     private javax.swing.JLabel CCSTname;
-    private javax.swing.JLabel Home;
     private javax.swing.JLabel LoginButton;
     private javax.swing.JLabel ProjectName;
     private javax.swing.JLabel Schoolportal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }

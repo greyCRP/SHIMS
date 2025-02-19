@@ -67,7 +67,7 @@ public class admin extends javax.swing.JFrame {
         getContentPane().add(ProjectName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         HomeButton.setForeground(new java.awt.Color(255, 255, 255));
-        HomeButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\home.png")); // NOI18N
+        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/home.png"))); // NOI18N
         HomeButton.setText("Home");
         HomeButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -76,11 +76,11 @@ public class admin extends javax.swing.JFrame {
         });
         getContentPane().add(HomeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1077, 10, 80, 40));
 
-        BGLZ.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\Plain Lapiz Lazuli.jpg")); // NOI18N
+        BGLZ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/Plain Lapiz Lazuli.jpg"))); // NOI18N
         getContentPane().add(BGLZ, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1180, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\dell\\OneDrive\\Documents\\Apache Pictures\\image-removebg-preview (1).png")); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, 570));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/shims/image-removebg-preview (1).png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, 570));
 
         pack();
         setLocationRelativeTo(null);

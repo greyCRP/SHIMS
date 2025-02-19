@@ -86,7 +86,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\dell\OneDrive\Documents\Apache Pictures\home.png"/>
+          <Image iconType="3" name="/com/mycompany/shims/home.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Home"/>
       </Properties>
@@ -102,7 +102,7 @@
     <Component class="javax.swing.JLabel" name="BGLZ">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\dell\OneDrive\Documents\Apache Pictures\Plain Lapiz Lazuli.jpg"/>
+          <Image iconType="3" name="/com/mycompany/shims/Plain Lapiz Lazuli.jpg"/>
         </Property>
       </Properties>
       <Constraints>
@@ -114,12 +114,12 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\dell\OneDrive\Documents\Apache Pictures\image-removebg-preview (1).png"/>
+          <Image iconType="3" name="/com/mycompany/shims/image-removebg-preview (1).png"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="520" y="70" width="-1" height="570"/>
+          <AbsoluteConstraints x="490" y="70" width="-1" height="570"/>
         </Constraint>
       </Constraints>
     </Component>
