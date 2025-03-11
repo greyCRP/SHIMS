@@ -108,7 +108,7 @@ public class student extends javax.swing.JFrame {
         out5 = new javax.swing.JTextField();
         bt1 = new javax.swing.JButton();
         bt3 = new javax.swing.JButton();
-        bt4 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -156,54 +156,85 @@ public class student extends javax.swing.JFrame {
 
         GradeComputer.setForeground(new java.awt.Color(255, 255, 255));
         GradeComputer.setVisible(false);
+        GradeComputer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        GradeComputer.add(f11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 109, 220, 40));
 
         jLabel76.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel76.setText("1st Subject");
+        GradeComputer.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 69, -1, -1));
 
         jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel77.setText("2nd Subject");
+        GradeComputer.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
+        GradeComputer.add(f12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 220, 40));
+        GradeComputer.add(f14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 439, 220, 40));
 
         jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel78.setText("4th Subject");
+        GradeComputer.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 399, -1, -1));
+        GradeComputer.add(f13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 328, 220, 40));
 
         jLabel79.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel79.setText("3rd Subject");
+        GradeComputer.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 288, -1, -1));
+        GradeComputer.add(f16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 667, 220, 40));
 
         jLabel80.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel80.setText("6th Subject");
+        GradeComputer.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 627, -1, -1));
+        GradeComputer.add(f15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 556, 220, 40));
 
         jLabel81.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel81.setText("5th Subject");
+        GradeComputer.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 516, -1, -1));
+        GradeComputer.add(f17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 788, 220, 40));
 
         jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel82.setText("7th Subject");
+        GradeComputer.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 748, -1, -1));
 
         jLabel83.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel83.setText("First Quarter");
+        GradeComputer.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 16, -1, -1));
+        GradeComputer.add(s17, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 788, 220, 40));
+        GradeComputer.add(s16, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 667, 220, 40));
 
         jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel84.setText("7th Subject");
+        GradeComputer.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 748, -1, -1));
 
         jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel85.setText("6th Subject");
+        GradeComputer.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 627, -1, -1));
 
         jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel86.setText("5th Subject");
+        GradeComputer.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 516, -1, -1));
+        GradeComputer.add(s15, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 556, 220, 40));
+        GradeComputer.add(s14, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 439, 220, 40));
 
         jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel87.setText("4th Subject");
+        GradeComputer.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 399, -1, -1));
+        GradeComputer.add(s13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 328, 220, 40));
 
         jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel88.setText("3rd Subject");
+        GradeComputer.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 288, -1, -1));
+        GradeComputer.add(s12, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 220, 220, 40));
 
         jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel89.setText("2nd Subject");
+        GradeComputer.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 180, -1, -1));
+        GradeComputer.add(s11, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 109, 220, 40));
 
         jLabel90.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel90.setText("1st Subject");
+        GradeComputer.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 69, -1, -1));
 
         jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel91.setText("Second Quarter");
+        GradeComputer.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 16, -1, -1));
 
         bt2.setText("Calculate Second Quarter");
         bt2.addActionListener(new java.awt.event.ActionListener() {
@@ -211,78 +242,117 @@ public class student extends javax.swing.JFrame {
                 bt2ActionPerformed(evt);
             }
         });
+        GradeComputer.add(bt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 855, -1, -1));
+        GradeComputer.add(t17, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 788, 220, 40));
 
         jLabel92.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel92.setText("7th Subject");
+        GradeComputer.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 748, -1, -1));
+        GradeComputer.add(t16, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 667, 220, 40));
 
         jLabel93.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel93.setText("6th Subject");
+        GradeComputer.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 627, -1, -1));
+        GradeComputer.add(t15, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 556, 220, 40));
 
         jLabel94.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel94.setText("5th Subject");
+        GradeComputer.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 516, -1, -1));
+        GradeComputer.add(t14, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 439, 220, 40));
 
         jLabel95.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel95.setText("4th Subject");
+        GradeComputer.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 399, -1, -1));
+        GradeComputer.add(t13, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 328, 220, 40));
 
         jLabel96.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel96.setText("3rd Subject");
+        GradeComputer.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 288, -1, -1));
+        GradeComputer.add(t12, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 220, 220, 40));
 
         jLabel97.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel97.setText("2nd Subject");
+        GradeComputer.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 180, -1, -1));
+        GradeComputer.add(t11, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 109, 220, 40));
 
         jLabel98.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel98.setText("1st Subject");
+        GradeComputer.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 69, -1, -1));
 
         jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel99.setText("Third Quarter");
+        GradeComputer.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(597, 16, -1, -1));
+        GradeComputer.add(l17, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 788, 220, 40));
 
         jLabel100.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel100.setText("7th Subject");
+        GradeComputer.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 748, -1, -1));
+        GradeComputer.add(l16, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 666, 220, 40));
 
         jLabel101.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel101.setText("6th Subject");
+        GradeComputer.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 626, -1, -1));
+        GradeComputer.add(l15, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 544, 220, 40));
 
         jLabel102.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel102.setText("5th Subject");
+        GradeComputer.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 504, -1, -1));
+        GradeComputer.add(l14, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 427, 220, 40));
 
         jLabel103.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel103.setText("4th Subject");
+        GradeComputer.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 390, -1, -1));
+        GradeComputer.add(l13, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 319, 220, 40));
 
         jLabel104.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel104.setText("3rd Subject");
+        GradeComputer.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 279, -1, -1));
+        GradeComputer.add(l12, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 211, 220, 40));
 
         jLabel105.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel105.setText("2nd Subject");
+        GradeComputer.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 171, -1, -1));
+        GradeComputer.add(l11, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 109, 220, 40));
 
         jLabel106.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel106.setText("1st Subject");
+        GradeComputer.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(877, 69, -1, -1));
 
         jLabel107.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel107.setText("Fourth Quarter");
+        GradeComputer.add(jLabel107, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 20, -1, -1));
 
         jLabel108.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel108.setText("First Quarter Average");
+        GradeComputer.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(1319, 85, -1, -1));
 
         out1.setEditable(false);
         out1.setToolTipText("");
+        GradeComputer.add(out1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1372, 121, 83, 32));
 
         jLabel109.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel109.setText("Second Quarter Average");
+        GradeComputer.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(1316, 182, -1, -1));
 
         out2.setEditable(false);
         out2.setToolTipText("");
+        GradeComputer.add(out2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1376, 219, 83, 32));
 
         out4.setEditable(false);
         out4.setToolTipText("");
+        GradeComputer.add(out4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1374, 416, 83, 32));
 
         jLabel110.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel110.setText("Fourth Quarter Average");
+        GradeComputer.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(1316, 373, -1, -1));
 
         out3.setEditable(false);
         out3.setToolTipText("");
+        GradeComputer.add(out3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1374, 324, 83, 32));
 
         jLabel111.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel111.setText("Third Quarter Average");
+        GradeComputer.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(1316, 287, -1, -1));
 
         bta.setText("Calculate Overall Average");
         bta.addActionListener(new java.awt.event.ActionListener() {
@@ -290,6 +360,7 @@ public class student extends javax.swing.JFrame {
                 btaActionPerformed(evt);
             }
         });
+        GradeComputer.add(bta, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 542, 234, 53));
 
         out5.setEditable(false);
         out5.addActionListener(new java.awt.event.ActionListener() {
@@ -297,6 +368,7 @@ public class student extends javax.swing.JFrame {
                 out5ActionPerformed(evt);
             }
         });
+        GradeComputer.add(out5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1363, 624, 112, 35));
 
         bt1.setText("Calculate First Quarter");
         bt1.addActionListener(new java.awt.event.ActionListener() {
@@ -304,6 +376,7 @@ public class student extends javax.swing.JFrame {
                 bt1ActionPerformed(evt);
             }
         });
+        GradeComputer.add(bt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 856, -1, -1));
 
         bt3.setText("Calculate Third Quarter");
         bt3.addActionListener(new java.awt.event.ActionListener() {
@@ -311,313 +384,15 @@ public class student extends javax.swing.JFrame {
                 bt3ActionPerformed(evt);
             }
         });
+        GradeComputer.add(bt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 855, -1, -1));
 
-        bt4.setText("Calculate Fourth Quarter");
-        bt4.addActionListener(new java.awt.event.ActionListener() {
+        jButton20.setText("Calculate Fourth Quarter");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt4ActionPerformed(evt);
+                jButton20ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout GradeComputerLayout = new javax.swing.GroupLayout(GradeComputer);
-        GradeComputer.setLayout(GradeComputerLayout);
-        GradeComputerLayout.setHorizontalGroup(
-            GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(GradeComputerLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel82)
-                    .addComponent(f17, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel80)
-                    .addComponent(f16, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel81)
-                    .addComponent(f15, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel78)
-                    .addComponent(f14, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel79)
-                    .addComponent(f13, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel77)
-                    .addComponent(f12, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel76)
-                    .addComponent(f11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel83))
-                .addGap(52, 52, 52)
-                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel91)
-                    .addComponent(jLabel84)
-                    .addComponent(s17, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel85)
-                    .addComponent(s16, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel86)
-                    .addComponent(s15, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel87)
-                    .addComponent(s14, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel88)
-                    .addComponent(s13, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel89)
-                    .addComponent(s12, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel90)
-                    .addComponent(s11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                        .addComponent(jLabel97)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(out1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(135, 135, 135))
-                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel99)
-                            .addComponent(jLabel92)
-                            .addComponent(t17, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel93)
-                            .addComponent(t16, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel94)
-                            .addComponent(t15, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel95)
-                            .addComponent(t14, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel96)
-                            .addComponent(t13, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(t12, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel98)
-                            .addComponent(t11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(60, 60, 60)
-                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(l11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel105)
-                            .addComponent(jLabel107)
-                            .addComponent(jLabel100)
-                            .addComponent(l17, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel101)
-                            .addComponent(l16, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel102)
-                            .addComponent(l15, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel103)
-                            .addComponent(l14, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel104)
-                            .addComponent(l13, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(l12, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel106))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
-                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel109)
-                                    .addComponent(jLabel110)
-                                    .addComponent(jLabel111))
-                                .addGap(80, 80, 80))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(bta, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(jLabel108)
-                                .addGap(103, 103, 103))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(out3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(133, 133, 133))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(out4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(133, 133, 133))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(out2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(131, 131, 131))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(out5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(115, 115, 115))))))
-            .addGroup(GradeComputerLayout.createSequentialGroup()
-                .addGap(362, 362, 362)
-                .addComponent(bt2)
-                .addGap(114, 114, 114)
-                .addComponent(bt3)
-                .addGap(140, 140, 140)
-                .addComponent(bt4)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(GradeComputerLayout.createSequentialGroup()
-                    .addGap(109, 109, 109)
-                    .addComponent(bt1)
-                    .addContainerGap(1334, Short.MAX_VALUE)))
-        );
-        GradeComputerLayout.setVerticalGroup(
-            GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel83)
-                                            .addComponent(jLabel91))
-                                        .addGap(28, 28, 28)
-                                        .addComponent(jLabel76)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel77)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(28, 28, 28)
-                                        .addComponent(jLabel79)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel78)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(37, 37, 37)
-                                        .addComponent(jLabel81)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel80)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                                        .addComponent(jLabel90)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel89)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(28, 28, 28)
-                                        .addComponent(jLabel88)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel87)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(37, 37, 37)
-                                        .addComponent(jLabel86)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel85)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                        .addComponent(jLabel82)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(f17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                        .addComponent(jLabel84)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(s17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                                        .addComponent(jLabel99)
-                                        .addGap(666, 666, 666))
-                                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                                .addComponent(jLabel106)
-                                                .addGap(15, 15, 15)
-                                                .addComponent(l11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                                .addComponent(jLabel98)
-                                                .addGap(15, 15, 15)
-                                                .addComponent(t11, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel97)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(t12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(28, 28, 28)
-                                        .addComponent(jLabel96)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(t13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel95)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(t14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(37, 37, 37)
-                                        .addComponent(jLabel94)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(t15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(jLabel93)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(t16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel92)
-                                .addGap(15, 15, 15)
-                                .addComponent(t17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(jLabel108)
-                                .addGap(11, 11, 11)
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(GradeComputerLayout.createSequentialGroup()
-                                        .addComponent(out1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                                .addComponent(jLabel105)
-                                                .addGap(15, 15, 15)
-                                                .addComponent(l12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                                .addComponent(jLabel109)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(out2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                                .addGap(28, 28, 28)
-                                                .addComponent(jLabel104)
-                                                .addGap(15, 15, 15)
-                                                .addComponent(l13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(31, 31, 31)
-                                                .addComponent(jLabel103)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(l14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(GradeComputerLayout.createSequentialGroup()
-                                                .addGap(36, 36, 36)
-                                                .addComponent(jLabel111)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(out3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(17, 17, 17)
-                                                .addComponent(jLabel110)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(out4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(37, 37, 37)
-                                        .addComponent(jLabel102)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(l15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                        .addGap(421, 421, 421)
-                                        .addComponent(bta, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(29, 29, 29)
-                                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel101)
-                                    .addComponent(out5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(7, 7, 7)
-                                .addComponent(l16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                                .addComponent(jLabel107)
-                                .addGap(675, 675, 675)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel100)
-                        .addGap(15, 15, 15)
-                        .addComponent(l17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(27, 27, 27)
-                .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bt2)
-                    .addComponent(bt3)
-                    .addComponent(bt4))
-                .addGap(102, 102, 102))
-            .addGroup(GradeComputerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GradeComputerLayout.createSequentialGroup()
-                    .addContainerGap(856, Short.MAX_VALUE)
-                    .addComponent(bt1)
-                    .addGap(101, 101, 101)))
-        );
+        GradeComputer.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(932, 855, -1, -1));
 
         getContentPane().add(GradeComputer, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
 
@@ -663,7 +438,7 @@ public class student extends javax.swing.JFrame {
         int a = Integer.parseInt(bt1.getText());
         int b = Integer.parseInt(bt2.getText());
         int c = Integer.parseInt(bt3.getText());
-        int d = Integer.parseInt(bt4.getText());
+        int d = Integer.parseInt(jButton20.getText());
 
         int res = (a+b+c+d)/4;
 
@@ -733,7 +508,7 @@ public class student extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_bt3ActionPerformed
 
-    private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         int a = Integer.parseInt(l11.getText());
         int b = Integer.parseInt(l12.getText());
         int c = Integer.parseInt(l13.getText());
@@ -747,7 +522,7 @@ public class student extends javax.swing.JFrame {
         out4.setText(""+resut);
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_bt4ActionPerformed
+    }//GEN-LAST:event_jButton20ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -792,7 +567,6 @@ public class student extends javax.swing.JFrame {
     private javax.swing.JButton bt1;
     private javax.swing.JButton bt2;
     private javax.swing.JButton bt3;
-    private javax.swing.JButton bt4;
     private javax.swing.JButton bta;
     private javax.swing.JTextField f11;
     private javax.swing.JTextField f12;
@@ -809,6 +583,7 @@ public class student extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
