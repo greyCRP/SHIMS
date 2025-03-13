@@ -40,6 +40,7 @@ public class HomePage extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         login = new javax.swing.JButton();
@@ -123,6 +124,16 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel11.setText("2. If you are a new user click the \"Login\"");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 930, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel19.setText("Sign up");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1730, 720, 70, -1));
 
         jLabel12.setText("button at the top right of the screen");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1650, 950, -1, -1));
@@ -231,12 +242,25 @@ public class HomePage extends javax.swing.JFrame {
     }//GEN-LAST:event_loginActionPerformed
 
     private void ShowPassBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowPassBActionPerformed
+
+        if (ShowPassB.isSelected()){
+            PassT.setEchoChar((char)0);
+        }
+        else
+        PassT.setEchoChar('*');
         // TODO add your handling code here:
     }//GEN-LAST:event_ShowPassBActionPerformed
 
     private void AccTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccTActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AccTActionPerformed
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+
+        new Signup().setVisible(true);
+        this.dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel19MouseClicked
 
     /**
      * @param args the command line arguments
@@ -291,6 +315,7 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
