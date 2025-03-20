@@ -15,7 +15,7 @@ public class SHIMSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-      Login LoginFrame =   new Login();
+      NewLogin LoginFrame =   new NewLogin();
       LoginFrame.setVisible(true);
       LoginFrame.pack();
       LoginFrame.setLocationRelativeTo(null);
