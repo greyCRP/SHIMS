@@ -160,7 +160,6 @@ if (studentNo.isEmpty()) {
     return;
 }
 
-
 if (pass.isEmpty()) {
     JOptionPane.showMessageDialog(null, "Please fill out Password");
     return;

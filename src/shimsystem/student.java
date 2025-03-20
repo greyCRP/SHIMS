@@ -112,6 +112,7 @@ public class student extends javax.swing.JFrame {
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("STUDENT | SHIMS");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
@@ -399,7 +400,7 @@ public class student extends javax.swing.JFrame {
         GradeComputer.getAccessibleContext().setAccessibleDescription("");
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 10, 1920, -1));
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(-450, 0, 1920, -1));
 
         pack();
         setLocationRelativeTo(null);

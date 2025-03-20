@@ -454,10 +454,12 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel263 = new javax.swing.JLabel();
         jLabel264 = new javax.swing.JLabel();
         jLabel265 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setPreferredSize(new java.awt.Dimension(1920, 1080));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         b1.setText("Information Communication & Technology");
@@ -466,7 +468,7 @@ public class StrandG12 extends javax.swing.JFrame {
                 b1ActionPerformed(evt);
             }
         });
-        getContentPane().add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 320, 30));
+        getContentPane().add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 30));
 
         b2.setText("Accountancy, Business, and Management ");
         b2.addActionListener(new java.awt.event.ActionListener() {
@@ -474,7 +476,7 @@ public class StrandG12 extends javax.swing.JFrame {
                 b2ActionPerformed(evt);
             }
         });
-        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 320, 40));
+        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 320, 40));
 
         b3.setText("Humanities and Social Sciences");
         b3.addActionListener(new java.awt.event.ActionListener() {
@@ -482,7 +484,7 @@ public class StrandG12 extends javax.swing.JFrame {
                 b3ActionPerformed(evt);
             }
         });
-        getContentPane().add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 320, 40));
+        getContentPane().add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 320, 40));
 
         b4.setText("Science, Technology, Engineering, and Mathematics");
         b4.addActionListener(new java.awt.event.ActionListener() {
@@ -490,7 +492,7 @@ public class StrandG12 extends javax.swing.JFrame {
                 b4ActionPerformed(evt);
             }
         });
-        getContentPane().add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 320, 40));
+        getContentPane().add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 320, 40));
 
         b5.setText("General Academic Strand");
         b5.addActionListener(new java.awt.event.ActionListener() {
@@ -498,7 +500,7 @@ public class StrandG12 extends javax.swing.JFrame {
                 b5ActionPerformed(evt);
             }
         });
-        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 320, 40));
+        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 320, 40));
 
         panel1.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panel1.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -829,7 +831,7 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel28.setText("and Risk Reduction.");
         panel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 480, -1, 250));
 
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1590, 980));
 
         panel2.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panel2.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -1080,7 +1082,7 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel176.setText("Subject 4");
         panel2.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1590, 980));
 
         panel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         panel4.setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -1332,7 +1334,7 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel212.setText("Subject 4");
         panel4.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        getContentPane().add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+        getContentPane().add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1590, 980));
 
         panel3.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -1583,7 +1585,7 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel235.setText("Subject 4");
         panel3.add(jLabel235, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+        getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1590, 980));
 
         panel5.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panel5.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -1834,9 +1836,13 @@ public class StrandG12 extends javax.swing.JFrame {
         jLabel265.setText("Subject 4");
         panel5.add(jLabel265, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        getContentPane().add(panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
+        getContentPane().add(panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1590, 980));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Grey.jpg"))); // NOI18N
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 230));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
@@ -2402,6 +2408,7 @@ public class StrandG12 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel265;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

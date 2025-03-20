@@ -460,10 +460,12 @@ public class Strand extends javax.swing.JFrame {
         jLabel264 = new javax.swing.JLabel();
         jLabel265 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setPreferredSize(new java.awt.Dimension(810, 980));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         b1.setText("Information Communication & Technology");
@@ -472,7 +474,7 @@ public class Strand extends javax.swing.JFrame {
                 b1ActionPerformed(evt);
             }
         });
-        getContentPane().add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 320, 30));
+        getContentPane().add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 320, 30));
 
         b2.setText("Accountancy, Business, and Management ");
         b2.addActionListener(new java.awt.event.ActionListener() {
@@ -480,7 +482,7 @@ public class Strand extends javax.swing.JFrame {
                 b2ActionPerformed(evt);
             }
         });
-        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 320, 40));
+        getContentPane().add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 320, 40));
 
         b3.setText("Humanities and Social Sciences");
         b3.addActionListener(new java.awt.event.ActionListener() {
@@ -488,7 +490,7 @@ public class Strand extends javax.swing.JFrame {
                 b3ActionPerformed(evt);
             }
         });
-        getContentPane().add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 320, 40));
+        getContentPane().add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 320, 40));
 
         b4.setText("Science, Technology, Engineering, and Mathematics");
         b4.addActionListener(new java.awt.event.ActionListener() {
@@ -496,7 +498,7 @@ public class Strand extends javax.swing.JFrame {
                 b4ActionPerformed(evt);
             }
         });
-        getContentPane().add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 320, 40));
+        getContentPane().add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 320, 40));
 
         b5.setText("General Academic Strand");
         b5.addActionListener(new java.awt.event.ActionListener() {
@@ -504,7 +506,7 @@ public class Strand extends javax.swing.JFrame {
                 b5ActionPerformed(evt);
             }
         });
-        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 320, 40));
+        getContentPane().add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 320, 40));
 
         panel1.setMaximumSize(new java.awt.Dimension(1920, 1080));
         panel1.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -1890,7 +1892,11 @@ public class Strand extends javax.swing.JFrame {
 
         getContentPane().add(panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 1590, 980));
 
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Grey.jpg"))); // NOI18N
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 230));
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
@@ -2504,6 +2510,7 @@ this.dispose();
     private javax.swing.JLabel jLabel265;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
