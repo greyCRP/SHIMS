@@ -120,7 +120,7 @@ public class admin extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-new StudentManagementAdmin().setVisible(true);
+
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
