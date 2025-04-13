@@ -50,6 +50,7 @@ public class Signup extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         emailField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -92,10 +93,10 @@ public class Signup extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        LoginLeft.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 397, 88, 41));
+        LoginLeft.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 88, 41));
 
         jLabel4.setText("I've have an account");
-        LoginLeft.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 462, -1, -1));
+        LoginLeft.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 480, -1, -1));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -105,17 +106,26 @@ public class Signup extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        LoginLeft.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 456, 88, -1));
+        LoginLeft.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 88, -1));
         LoginLeft.add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 178, 320, 34));
 
         jLabel5.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
         jLabel5.setText("Student Number");
         LoginLeft.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 150, -1, -1));
-        LoginLeft.add(emailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 258, 320, 34));
+
+        emailField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailFieldActionPerformed(evt);
+            }
+        });
+        LoginLeft.add(emailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 320, 34));
 
         jLabel6.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
         jLabel6.setText("Gmail account");
         LoginLeft.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 230, -1, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Student", "Teacher" }));
+        LoginLeft.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 80, -1));
 
         getContentPane().add(LoginLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 390, 540));
 
@@ -145,8 +155,8 @@ public class Signup extends javax.swing.JFrame {
         jLabel13.setText("A NEW JOURNEY");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 470, 120));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shimsystem/logind.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, -1));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logind.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -208,6 +218,10 @@ try (Connection conn = DriverManager.getConnection(url, user, password)) {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailFieldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -249,6 +263,7 @@ try (Connection conn = DriverManager.getConnection(url, user, password)) {
     private javax.swing.JTextField idField;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

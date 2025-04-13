@@ -45,7 +45,7 @@ public class NewLogin extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         LoginLeft = new java.awt.Panel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -55,7 +55,6 @@ public class NewLogin extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jSpinner1 = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -81,8 +80,8 @@ public class NewLogin extends javax.swing.JFrame {
         jLabel11.setText("WELCOME BACK!");
         panel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 420, 90));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shimsystem/logind.png"))); // NOI18N
-        panel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, -1));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logind.png"))); // NOI18N
+        panel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 540));
 
@@ -125,9 +124,6 @@ public class NewLogin extends javax.swing.JFrame {
             }
         });
         LoginLeft.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 88, 40));
-
-        jSpinner1.setModel(new javax.swing.SpinnerListModel(new String[] {"Teacher", "Student"}));
-        LoginLeft.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         getContentPane().add(LoginLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 360, 540));
 
@@ -175,8 +171,7 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
 
     if (resultSet.next()) { // If record exists
         JOptionPane.showMessageDialog(null, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-        new student().setVisible(true); 
-        this.dispose();
+       
     } 
     else  {
         JOptionPane.showMessageDialog(null, "Invalid Student Number or Password", "Error", JOptionPane.ERROR_MESSAGE);
@@ -237,10 +232,9 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JSpinner jSpinner1;
     private java.awt.Panel panel1;
     private javax.swing.JPasswordField passField;
     // End of variables declaration//GEN-END:variables

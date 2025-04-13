@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package shimsystem;
 
-/**
- *
- * @author dell
- */
 public class student extends javax.swing.JFrame {
 
     /**
@@ -15,6 +7,7 @@ public class student extends javax.swing.JFrame {
      */
     public student() {
         initComponents();
+          this.setVisible(true);
     }
 
     /**
@@ -39,70 +32,27 @@ public class student extends javax.swing.JFrame {
         button2 = new java.awt.Button();
         button3 = new java.awt.Button();
         Grade11 = new java.awt.Panel();
-        txt1 = new javax.swing.JTextField();
-        jLabel110 = new javax.swing.JLabel();
-        jLabel111 = new javax.swing.JLabel();
-        txt2 = new javax.swing.JTextField();
-        txt4 = new javax.swing.JTextField();
-        jLabel112 = new javax.swing.JLabel();
-        txt3 = new javax.swing.JTextField();
-        jLabel115 = new javax.swing.JLabel();
-        txt6 = new javax.swing.JTextField();
-        jLabel116 = new javax.swing.JLabel();
-        txt5 = new javax.swing.JTextField();
-        jLabel117 = new javax.swing.JLabel();
-        txt8 = new javax.swing.JTextField();
-        jLabel118 = new javax.swing.JLabel();
-        jLabel119 = new javax.swing.JLabel();
-        s18 = new javax.swing.JTextField();
-        s19 = new javax.swing.JTextField();
-        s20 = new javax.swing.JTextField();
-        s21 = new javax.swing.JTextField();
-        s22 = new javax.swing.JTextField();
-        s23 = new javax.swing.JTextField();
-        s24 = new javax.swing.JTextField();
-        jLabel120 = new javax.swing.JLabel();
-        bt5 = new javax.swing.JButton();
-        out123 = new javax.swing.JTextField();
-        out6 = new javax.swing.JTextField();
-        bt6 = new javax.swing.JButton();
-        jLabel121 = new javax.swing.JLabel();
-        t18 = new javax.swing.JTextField();
-        t19 = new javax.swing.JTextField();
-        t20 = new javax.swing.JTextField();
-        t21 = new javax.swing.JTextField();
-        t22 = new javax.swing.JTextField();
-        t23 = new javax.swing.JTextField();
-        t24 = new javax.swing.JTextField();
+        c1 = new javax.swing.JTextField();
+        c2 = new javax.swing.JTextField();
+        c4 = new javax.swing.JTextField();
+        c3 = new javax.swing.JTextField();
+        c6 = new javax.swing.JTextField();
+        c5 = new javax.swing.JTextField();
+        c9 = new javax.swing.JTextField();
         jLabel131 = new javax.swing.JLabel();
-        p18 = new javax.swing.JTextField();
-        p19 = new javax.swing.JTextField();
-        p20 = new javax.swing.JTextField();
-        p21 = new javax.swing.JTextField();
-        p22 = new javax.swing.JTextField();
-        p23 = new javax.swing.JTextField();
-        p24 = new javax.swing.JTextField();
+        b9 = new javax.swing.JTextField();
+        b6 = new javax.swing.JTextField();
+        b5 = new javax.swing.JTextField();
+        b4 = new javax.swing.JTextField();
+        b3 = new javax.swing.JTextField();
+        b2 = new javax.swing.JTextField();
+        b1 = new javax.swing.JTextField();
         jLabel132 = new javax.swing.JLabel();
         bt7 = new javax.swing.JButton();
         out7 = new javax.swing.JTextField();
         out8 = new javax.swing.JTextField();
         bt8 = new javax.swing.JButton();
         jLabel133 = new javax.swing.JLabel();
-        jLabel134 = new javax.swing.JLabel();
-        jLabel135 = new javax.swing.JLabel();
-        f29 = new javax.swing.JTextField();
-        txt7 = new javax.swing.JTextField();
-        txt9 = new javax.swing.JTextField();
-        f32 = new javax.swing.JTextField();
-        jLabel152 = new javax.swing.JLabel();
-        jLabel153 = new javax.swing.JLabel();
-        jLabel154 = new javax.swing.JLabel();
-        jLabel155 = new javax.swing.JLabel();
-        jLabel156 = new javax.swing.JLabel();
-        jLabel157 = new javax.swing.JLabel();
-        jLabel158 = new javax.swing.JLabel();
-        jLabel159 = new javax.swing.JLabel();
-        jLabel160 = new javax.swing.JLabel();
         jLabel161 = new javax.swing.JLabel();
         jLabel162 = new javax.swing.JLabel();
         jLabel163 = new javax.swing.JLabel();
@@ -118,28 +68,81 @@ public class student extends javax.swing.JFrame {
         jLabel174 = new javax.swing.JLabel();
         jLabel176 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        t1 = new javax.swing.JTextField();
+        t2 = new javax.swing.JTextField();
+        t4 = new javax.swing.JTextField();
+        t3 = new javax.swing.JTextField();
+        t6 = new javax.swing.JTextField();
+        t5 = new javax.swing.JTextField();
+        jLabel97 = new javax.swing.JLabel();
+        a8 = new javax.swing.JTextField();
+        a7 = new javax.swing.JTextField();
+        a6 = new javax.swing.JTextField();
+        a4 = new javax.swing.JTextField();
+        a3 = new javax.swing.JTextField();
+        a2 = new javax.swing.JTextField();
+        a1 = new javax.swing.JTextField();
+        jLabel98 = new javax.swing.JLabel();
+        bt3 = new javax.swing.JButton();
+        out3 = new javax.swing.JTextField();
+        out4 = new javax.swing.JTextField();
+        bt4 = new javax.swing.JButton();
+        jLabel114 = new javax.swing.JLabel();
+        a5 = new javax.swing.JTextField();
+        t7 = new javax.swing.JTextField();
+        a9 = new javax.swing.JTextField();
+        jLabel173 = new javax.swing.JLabel();
+        jLabel175 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        jLabel178 = new javax.swing.JLabel();
+        jLabel179 = new javax.swing.JLabel();
+        jLabel180 = new javax.swing.JLabel();
+        jLabel181 = new javax.swing.JLabel();
+        t8 = new javax.swing.JTextField();
+        t9 = new javax.swing.JTextField();
+        jLabel182 = new javax.swing.JLabel();
+        jLabel183 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel224 = new javax.swing.JLabel();
+        jLabel225 = new javax.swing.JLabel();
+        jLabel226 = new javax.swing.JLabel();
+        jLabel227 = new javax.swing.JLabel();
+        jLabel228 = new javax.swing.JLabel();
+        jLabel229 = new javax.swing.JLabel();
+        jLabel230 = new javax.swing.JLabel();
+        jLabel231 = new javax.swing.JLabel();
+        jLabel232 = new javax.swing.JLabel();
+        c7 = new javax.swing.JTextField();
+        c8 = new javax.swing.JTextField();
+        b7 = new javax.swing.JTextField();
+        b8 = new javax.swing.JTextField();
+        jLabel233 = new javax.swing.JLabel();
+        jLabel234 = new javax.swing.JLabel();
+        jLabel235 = new javax.swing.JLabel();
+        jLabel236 = new javax.swing.JLabel();
         Grade12 = new java.awt.Panel();
-        t25 = new javax.swing.JTextField();
-        t26 = new javax.swing.JTextField();
-        t27 = new javax.swing.JTextField();
-        t28 = new javax.swing.JTextField();
-        t29 = new javax.swing.JTextField();
-        t30 = new javax.swing.JTextField();
-        t31 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
+        g1 = new javax.swing.JTextField();
+        g2 = new javax.swing.JTextField();
+        g4 = new javax.swing.JTextField();
+        g3 = new javax.swing.JTextField();
+        g6 = new javax.swing.JTextField();
+        g5 = new javax.swing.JTextField();
+        g9 = new javax.swing.JTextField();
+        jLabel134 = new javax.swing.JLabel();
+        q9 = new javax.swing.JTextField();
+        q6 = new javax.swing.JTextField();
+        q5 = new javax.swing.JTextField();
+        q4 = new javax.swing.JTextField();
+        q3 = new javax.swing.JTextField();
+        q2 = new javax.swing.JTextField();
+        q1 = new javax.swing.JTextField();
+        jLabel135 = new javax.swing.JLabel();
+        bt9 = new javax.swing.JButton();
+        out9 = new javax.swing.JTextField();
+        out10 = new javax.swing.JTextField();
+        bt10 = new javax.swing.JButton();
         jLabel136 = new javax.swing.JLabel();
-        p25 = new javax.swing.JTextField();
-        p26 = new javax.swing.JTextField();
-        p27 = new javax.swing.JTextField();
-        p28 = new javax.swing.JTextField();
-        p29 = new javax.swing.JTextField();
-        p30 = new javax.swing.JTextField();
-        p31 = new javax.swing.JTextField();
-        jLabel137 = new javax.swing.JLabel();
-        bt11 = new javax.swing.JButton();
-        out11 = new javax.swing.JTextField();
-        out12 = new javax.swing.JTextField();
-        bt12 = new javax.swing.JButton();
-        jLabel138 = new javax.swing.JLabel();
         jLabel184 = new javax.swing.JLabel();
         jLabel185 = new javax.swing.JLabel();
         jLabel186 = new javax.swing.JLabel();
@@ -154,116 +157,94 @@ public class student extends javax.swing.JFrame {
         jLabel195 = new javax.swing.JLabel();
         jLabel196 = new javax.swing.JLabel();
         jLabel197 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        f11 = new javax.swing.JTextField();
-        jLabel76 = new javax.swing.JLabel();
-        jLabel77 = new javax.swing.JLabel();
-        f12 = new javax.swing.JTextField();
-        f14 = new javax.swing.JTextField();
-        jLabel78 = new javax.swing.JLabel();
-        f13 = new javax.swing.JTextField();
-        jLabel79 = new javax.swing.JLabel();
-        f16 = new javax.swing.JTextField();
-        jLabel80 = new javax.swing.JLabel();
-        f15 = new javax.swing.JTextField();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        s17 = new javax.swing.JTextField();
-        s16 = new javax.swing.JTextField();
-        s15 = new javax.swing.JTextField();
-        s14 = new javax.swing.JTextField();
-        s13 = new javax.swing.JTextField();
-        s12 = new javax.swing.JTextField();
-        s11 = new javax.swing.JTextField();
-        jLabel91 = new javax.swing.JLabel();
-        bt2 = new javax.swing.JButton();
-        out1 = new javax.swing.JTextField();
-        out2 = new javax.swing.JTextField();
-        bt1 = new javax.swing.JButton();
-        jLabel113 = new javax.swing.JLabel();
-        jLabel109 = new javax.swing.JLabel();
-        f18 = new javax.swing.JTextField();
-        f19 = new javax.swing.JTextField();
-        f21 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jLabel87 = new javax.swing.JLabel();
-        jLabel88 = new javax.swing.JLabel();
-        jLabel89 = new javax.swing.JLabel();
-        jLabel90 = new javax.swing.JLabel();
-        jLabel128 = new javax.swing.JLabel();
-        jLabel129 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        h1 = new javax.swing.JTextField();
+        h2 = new javax.swing.JTextField();
+        h4 = new javax.swing.JTextField();
+        h3 = new javax.swing.JTextField();
+        h6 = new javax.swing.JTextField();
+        h5 = new javax.swing.JTextField();
+        jLabel99 = new javax.swing.JLabel();
+        p8 = new javax.swing.JTextField();
+        p7 = new javax.swing.JTextField();
+        p6 = new javax.swing.JTextField();
+        p4 = new javax.swing.JTextField();
+        p3 = new javax.swing.JTextField();
+        p2 = new javax.swing.JTextField();
+        p1 = new javax.swing.JTextField();
+        jLabel100 = new javax.swing.JLabel();
+        bt5 = new javax.swing.JButton();
+        out5 = new javax.swing.JTextField();
+        out6 = new javax.swing.JTextField();
+        bt6 = new javax.swing.JButton();
+        jLabel115 = new javax.swing.JLabel();
+        p5 = new javax.swing.JTextField();
+        h7 = new javax.swing.JTextField();
+        p9 = new javax.swing.JTextField();
+        jLabel237 = new javax.swing.JLabel();
+        jLabel238 = new javax.swing.JLabel();
+        jLabel239 = new javax.swing.JLabel();
+        jLabel240 = new javax.swing.JLabel();
+        jLabel241 = new javax.swing.JLabel();
+        jLabel242 = new javax.swing.JLabel();
+        jLabel243 = new javax.swing.JLabel();
+        h8 = new javax.swing.JTextField();
+        h9 = new javax.swing.JTextField();
+        jLabel244 = new javax.swing.JLabel();
+        jLabel245 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel246 = new javax.swing.JLabel();
+        jLabel247 = new javax.swing.JLabel();
+        jLabel248 = new javax.swing.JLabel();
+        jLabel249 = new javax.swing.JLabel();
+        jLabel250 = new javax.swing.JLabel();
+        jLabel251 = new javax.swing.JLabel();
+        jLabel252 = new javax.swing.JLabel();
+        jLabel253 = new javax.swing.JLabel();
+        jLabel254 = new javax.swing.JLabel();
+        g7 = new javax.swing.JTextField();
+        g8 = new javax.swing.JTextField();
+        q7 = new javax.swing.JTextField();
+        q8 = new javax.swing.JTextField();
+        jLabel255 = new javax.swing.JLabel();
+        jLabel256 = new javax.swing.JLabel();
+        jLabel257 = new javax.swing.JLabel();
+        jLabel258 = new javax.swing.JLabel();
         College = new java.awt.Panel();
-        f44 = new javax.swing.JTextField();
+        f1 = new javax.swing.JTextField();
         jLabel130 = new javax.swing.JLabel();
         jLabel141 = new javax.swing.JLabel();
-        f45 = new javax.swing.JTextField();
-        f46 = new javax.swing.JTextField();
+        f2 = new javax.swing.JTextField();
+        f4 = new javax.swing.JTextField();
         jLabel142 = new javax.swing.JLabel();
-        f47 = new javax.swing.JTextField();
+        f3 = new javax.swing.JTextField();
         jLabel143 = new javax.swing.JLabel();
-        f48 = new javax.swing.JTextField();
+        f6 = new javax.swing.JTextField();
         jLabel144 = new javax.swing.JLabel();
-        f49 = new javax.swing.JTextField();
+        f5 = new javax.swing.JTextField();
         jLabel145 = new javax.swing.JLabel();
-        f50 = new javax.swing.JTextField();
+        f8 = new javax.swing.JTextField();
         jLabel146 = new javax.swing.JLabel();
         jLabel147 = new javax.swing.JLabel();
-        s32 = new javax.swing.JTextField();
-        s33 = new javax.swing.JTextField();
-        s34 = new javax.swing.JTextField();
-        s35 = new javax.swing.JTextField();
-        s36 = new javax.swing.JTextField();
-        s37 = new javax.swing.JTextField();
-        s38 = new javax.swing.JTextField();
+        s8 = new javax.swing.JTextField();
+        s7 = new javax.swing.JTextField();
+        s6 = new javax.swing.JTextField();
+        s4 = new javax.swing.JTextField();
+        s3 = new javax.swing.JTextField();
+        s2 = new javax.swing.JTextField();
+        s1 = new javax.swing.JTextField();
         jLabel148 = new javax.swing.JLabel();
         bt13 = new javax.swing.JButton();
         out13 = new javax.swing.JTextField();
         out14 = new javax.swing.JTextField();
         bt14 = new javax.swing.JButton();
         jLabel149 = new javax.swing.JLabel();
-        t32 = new javax.swing.JTextField();
-        t33 = new javax.swing.JTextField();
-        t34 = new javax.swing.JTextField();
-        t35 = new javax.swing.JTextField();
-        t36 = new javax.swing.JTextField();
-        t37 = new javax.swing.JTextField();
-        t38 = new javax.swing.JTextField();
-        jLabel150 = new javax.swing.JLabel();
-        p32 = new javax.swing.JTextField();
-        p33 = new javax.swing.JTextField();
-        p34 = new javax.swing.JTextField();
-        p35 = new javax.swing.JTextField();
-        p36 = new javax.swing.JTextField();
-        p37 = new javax.swing.JTextField();
-        p38 = new javax.swing.JTextField();
-        jLabel151 = new javax.swing.JLabel();
-        bt15 = new javax.swing.JButton();
-        out15 = new javax.swing.JTextField();
-        out16 = new javax.swing.JTextField();
-        bt16 = new javax.swing.JButton();
         jLabel198 = new javax.swing.JLabel();
         jLabel199 = new javax.swing.JLabel();
         jLabel200 = new javax.swing.JLabel();
-        f51 = new javax.swing.JTextField();
-        f52 = new javax.swing.JTextField();
-        f53 = new javax.swing.JTextField();
-        f54 = new javax.swing.JTextField();
+        s5 = new javax.swing.JTextField();
+        f7 = new javax.swing.JTextField();
+        f9 = new javax.swing.JTextField();
+        s9 = new javax.swing.JTextField();
         jLabel201 = new javax.swing.JLabel();
         jLabel202 = new javax.swing.JLabel();
         jLabel203 = new javax.swing.JLabel();
@@ -273,8 +254,40 @@ public class student extends javax.swing.JFrame {
         jLabel207 = new javax.swing.JLabel();
         jLabel208 = new javax.swing.JLabel();
         jLabel209 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        r1 = new javax.swing.JTextField();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        r2 = new javax.swing.JTextField();
+        r4 = new javax.swing.JTextField();
+        jLabel151 = new javax.swing.JLabel();
+        r3 = new javax.swing.JTextField();
+        jLabel152 = new javax.swing.JLabel();
+        r6 = new javax.swing.JTextField();
+        jLabel153 = new javax.swing.JLabel();
+        r5 = new javax.swing.JTextField();
+        jLabel154 = new javax.swing.JLabel();
+        r8 = new javax.swing.JTextField();
+        jLabel155 = new javax.swing.JLabel();
+        jLabel156 = new javax.swing.JLabel();
+        w8 = new javax.swing.JTextField();
+        w7 = new javax.swing.JTextField();
+        w6 = new javax.swing.JTextField();
+        w4 = new javax.swing.JTextField();
+        w3 = new javax.swing.JTextField();
+        w2 = new javax.swing.JTextField();
+        w1 = new javax.swing.JTextField();
+        jLabel157 = new javax.swing.JLabel();
+        bt15 = new javax.swing.JButton();
+        out15 = new javax.swing.JTextField();
+        out16 = new javax.swing.JTextField();
+        bt16 = new javax.swing.JButton();
         jLabel210 = new javax.swing.JLabel();
         jLabel211 = new javax.swing.JLabel();
+        w5 = new javax.swing.JTextField();
+        r7 = new javax.swing.JTextField();
+        r9 = new javax.swing.JTextField();
+        w9 = new javax.swing.JTextField();
         jLabel212 = new javax.swing.JLabel();
         jLabel213 = new javax.swing.JLabel();
         jLabel214 = new javax.swing.JLabel();
@@ -284,10 +297,8 @@ public class student extends javax.swing.JFrame {
         jLabel218 = new javax.swing.JLabel();
         jLabel219 = new javax.swing.JLabel();
         jLabel220 = new javax.swing.JLabel();
-        jLabel221 = new javax.swing.JLabel();
-        jLabel222 = new javax.swing.JLabel();
-        jLabel223 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -329,12 +340,17 @@ public class student extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 250, 60));
 
         jButton4.setText("Enrollment");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 250, 60));
 
         jButton5.setText("Activities");
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 250, 60));
 
-        Grade.setBackground(new java.awt.Color(204, 204, 204));
+        Grade.setBackground(new java.awt.Color(255, 255, 255));
         Grade.setVisible(false);
         Grade.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -365,112 +381,28 @@ public class student extends javax.swing.JFrame {
         });
         Grade.add(button3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 450, 50));
 
+        Grade11.setForeground(new java.awt.Color(255, 255, 255));
         Grade11.setVisible(false);
         Grade11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        Grade11.add(txt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
-
-        jLabel110.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel110.setText("Subject 1");
-        Grade11.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
-
-        jLabel111.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel111.setText("Subject 2");
-        Grade11.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, -1, -1));
-        Grade11.add(txt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 100, 40));
-        Grade11.add(txt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
-
-        jLabel112.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel112.setText("Subject 7");
-        Grade11.add(jLabel112, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 170, -1, -1));
-        Grade11.add(txt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
-
-        jLabel115.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel115.setText("Subject 3");
-        Grade11.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 20));
-        Grade11.add(txt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
-
-        jLabel116.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel116.setText("Subject 6");
-        Grade11.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 170, -1, -1));
-        Grade11.add(txt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
-
-        jLabel117.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel117.setText("Subject 8");
-        Grade11.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
-        Grade11.add(txt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, 100, 40));
-
-        jLabel118.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel118.setText("Subject 5");
-        jLabel118.setToolTipText("");
-        Grade11.add(jLabel118, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, -1, -1));
-
-        jLabel119.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel119.setText("First Quarter");
-        jLabel119.setToolTipText("");
-        Grade11.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
-        Grade11.add(s18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
-        Grade11.add(s19, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
-        Grade11.add(s20, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
-        Grade11.add(s21, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
-        Grade11.add(s22, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
-        Grade11.add(s23, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
-        Grade11.add(s24, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
-
-        jLabel120.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel120.setText("Second Quarter");
-        Grade11.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
-
-        bt5.setText("Calculate Second Quarter");
-        bt5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt5ActionPerformed(evt);
-            }
-        });
-        Grade11.add(bt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 280, -1, -1));
-
-        out123.setEditable(false);
-        out123.setToolTipText("");
-        out123.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                out123ActionPerformed(evt);
-            }
-        });
-        Grade11.add(out123, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 200, 83, 32));
-
-        out6.setEditable(false);
-        out6.setToolTipText("");
-        Grade11.add(out6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 330, 83, 32));
-
-        bt6.setText("Calculate First Quarter");
-        bt6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt6ActionPerformed(evt);
-            }
-        });
-        Grade11.add(bt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 160, -1, -1));
-
-        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel121.setText("First Semester");
-        Grade11.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 260, -1));
-        Grade11.add(t18, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
-        Grade11.add(t19, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
-        Grade11.add(t20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
-        Grade11.add(t21, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
-        Grade11.add(t22, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
-        Grade11.add(t23, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
-        Grade11.add(t24, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 500, 100, 40));
+        Grade11.add(c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
+        Grade11.add(c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
+        Grade11.add(c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
+        Grade11.add(c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
+        Grade11.add(c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
+        Grade11.add(c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
+        Grade11.add(c9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 500, 100, 40));
 
         jLabel131.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel131.setText("First Quarter");
         jLabel131.setToolTipText("");
         Grade11.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
-        Grade11.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 620, 100, 40));
-        Grade11.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 620, 100, 40));
-        Grade11.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 620, 100, 40));
-        Grade11.add(p21, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 40));
-        Grade11.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 620, 100, 40));
-        Grade11.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 620, 100, 40));
-        Grade11.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 40));
+        Grade11.add(b9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 620, 100, 40));
+        Grade11.add(b6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 620, 100, 40));
+        Grade11.add(b5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 620, 100, 40));
+        Grade11.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 40));
+        Grade11.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 620, 100, 40));
+        Grade11.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 620, 100, 40));
+        Grade11.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 40));
 
         jLabel132.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel132.setText("Second Quarter");
@@ -482,15 +414,15 @@ public class student extends javax.swing.JFrame {
                 bt7ActionPerformed(evt);
             }
         });
-        Grade11.add(bt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 580, -1, -1));
+        Grade11.add(bt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 570, -1, -1));
 
         out7.setEditable(false);
         out7.setToolTipText("");
-        Grade11.add(out7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 510, 83, 32));
+        Grade11.add(out7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 510, 83, 32));
 
         out8.setEditable(false);
         out8.setToolTipText("");
-        Grade11.add(out8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 610, 83, 32));
+        Grade11.add(out8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 630, 83, 32));
 
         bt8.setText("Calculate First Quarter");
         bt8.addActionListener(new java.awt.event.ActionListener() {
@@ -498,60 +430,11 @@ public class student extends javax.swing.JFrame {
                 bt8ActionPerformed(evt);
             }
         });
-        Grade11.add(bt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 460, -1, -1));
+        Grade11.add(bt8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 460, -1, -1));
 
         jLabel133.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel133.setText("Second Semester");
         Grade11.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 320, -1));
-
-        jLabel134.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel134.setText("Subject 9");
-        Grade11.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 170, -1, 20));
-
-        jLabel135.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel135.setText("Subject 4");
-        Grade11.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, -1, -1));
-        Grade11.add(f29, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
-        Grade11.add(txt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
-        Grade11.add(txt9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 200, 100, 40));
-        Grade11.add(f32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
-
-        jLabel152.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel152.setText("Subject 1");
-        Grade11.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, -1, -1));
-
-        jLabel153.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel153.setText("Subject 2");
-        Grade11.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, -1));
-
-        jLabel154.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel154.setText("Subject 7");
-        Grade11.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 280, -1, -1));
-
-        jLabel155.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel155.setText("Subject 3");
-        Grade11.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, 20));
-
-        jLabel156.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel156.setText("Subject 6");
-        Grade11.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, -1, -1));
-
-        jLabel157.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel157.setText("Subject 8");
-        Grade11.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 280, -1, -1));
-
-        jLabel158.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel158.setText("Subject 5");
-        jLabel158.setToolTipText("");
-        Grade11.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, -1, -1));
-
-        jLabel159.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel159.setText("Subject 9");
-        Grade11.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 280, -1, 20));
-
-        jLabel160.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel160.setText("Subject 4");
-        Grade11.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
 
         jLabel161.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel161.setText("Subject 1");
@@ -562,8 +445,8 @@ public class student extends javax.swing.JFrame {
         Grade11.add(jLabel162, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, -1, -1));
 
         jLabel163.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel163.setText("Subject 7");
-        Grade11.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
+        jLabel163.setText("Subject 9");
+        Grade11.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 470, -1, -1));
 
         jLabel164.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel164.setText("Subject 3");
@@ -591,8 +474,8 @@ public class student extends javax.swing.JFrame {
         Grade11.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, -1, -1));
 
         jLabel170.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel170.setText("Subject 7");
-        Grade11.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 590, -1, -1));
+        jLabel170.setText("Subject 9");
+        Grade11.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, -1, -1));
 
         jLabel171.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel171.setText("Subject 3");
@@ -611,7 +494,7 @@ public class student extends javax.swing.JFrame {
         jLabel176.setText("Subject 4");
         Grade11.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        jButton6.setText("Back");
+        jButton6.setText("Close");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -619,61 +502,234 @@ public class student extends javax.swing.JFrame {
         });
         Grade11.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, 100, 30));
 
+        t1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t1ActionPerformed(evt);
+            }
+        });
+        Grade11.add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
+        Grade11.add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 100, 40));
+        Grade11.add(t4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
+        Grade11.add(t3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
+        Grade11.add(t6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
+        Grade11.add(t5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
+
+        jLabel97.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel97.setText("First Quarter");
+        jLabel97.setToolTipText("");
+        Grade11.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        Grade11.add(a8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
+        Grade11.add(a7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
+        Grade11.add(a6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
+        Grade11.add(a4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
+        Grade11.add(a3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
+        Grade11.add(a2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
+        Grade11.add(a1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
+
+        jLabel98.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel98.setText("Second Quarter");
+        Grade11.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
+
+        bt3.setText("Calculate Second Quarter");
+        bt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt3ActionPerformed(evt);
+            }
+        });
+        Grade11.add(bt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 280, -1, -1));
+
+        out3.setEditable(false);
+        out3.setToolTipText("");
+        out3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                out3ActionPerformed(evt);
+            }
+        });
+        Grade11.add(out3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 210, 83, 32));
+
+        out4.setEditable(false);
+        out4.setToolTipText("");
+        Grade11.add(out4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 320, 83, 32));
+
+        bt4.setText("Calculate First Quarter");
+        bt4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt4ActionPerformed(evt);
+            }
+        });
+        Grade11.add(bt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 160, -1, -1));
+
+        jLabel114.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel114.setText("First Semester");
+        Grade11.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 260, -1));
+        Grade11.add(a5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
+        Grade11.add(t7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
+        Grade11.add(a9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
+
+        jLabel173.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel173.setText("Subject 1");
+        Grade11.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+
+        jLabel175.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel175.setText("Subject 2");
+        Grade11.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, -1, -1));
+
+        jLabel177.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel177.setText("Subject 9");
+        Grade11.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 170, -1, -1));
+
+        jLabel178.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel178.setText("Subject 3");
+        Grade11.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 20));
+
+        jLabel179.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel179.setText("Subject 6");
+        Grade11.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 170, -1, -1));
+
+        jLabel180.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel180.setText("Subject 5");
+        jLabel180.setToolTipText("");
+        Grade11.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, -1, -1));
+
+        jLabel181.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel181.setText("Subject 4");
+        Grade11.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, -1, -1));
+        Grade11.add(t8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, 100, 40));
+        Grade11.add(t9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 200, 100, 40));
+
+        jLabel182.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel182.setText("Subject 7");
+        Grade11.add(jLabel182, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 170, -1, -1));
+
+        jLabel183.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel183.setText("Subject 8");
+        Grade11.add(jLabel183, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel10.setText("Please type N/A if you have less Subject");
+        jLabel10.setAutoscrolls(true);
+        Grade11.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 330, 40));
+
+        jLabel224.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel224.setText("Subject 1");
+        Grade11.add(jLabel224, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, -1, -1));
+
+        jLabel225.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel225.setText("Subject 2");
+        Grade11.add(jLabel225, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, -1));
+
+        jLabel226.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel226.setText("Subject 9");
+        Grade11.add(jLabel226, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 280, -1, -1));
+
+        jLabel227.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel227.setText("Subject 3");
+        Grade11.add(jLabel227, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, 20));
+
+        jLabel228.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel228.setText("Subject 6");
+        Grade11.add(jLabel228, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, -1, -1));
+
+        jLabel229.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel229.setText("Subject 5");
+        jLabel229.setToolTipText("");
+        Grade11.add(jLabel229, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, -1, -1));
+
+        jLabel230.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel230.setText("Subject 4");
+        Grade11.add(jLabel230, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
+
+        jLabel231.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel231.setText("Subject 7");
+        Grade11.add(jLabel231, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 280, -1, -1));
+
+        jLabel232.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel232.setText("Subject 8");
+        Grade11.add(jLabel232, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 280, -1, -1));
+        Grade11.add(c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 100, 40));
+        Grade11.add(c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 500, 100, 40));
+        Grade11.add(b7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, 100, 40));
+        Grade11.add(b8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 620, 100, 40));
+
+        jLabel233.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel233.setText("Subject 7");
+        Grade11.add(jLabel233, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
+
+        jLabel234.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel234.setText("Subject 8");
+        Grade11.add(jLabel234, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 470, -1, -1));
+
+        jLabel235.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel235.setText("Subject 7");
+        Grade11.add(jLabel235, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 590, -1, -1));
+
+        jLabel236.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel236.setText("Subject 8");
+        Grade11.add(jLabel236, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 590, -1, -1));
+
         Grade.add(Grade11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1590, 950));
 
         Grade12.setVisible(false);
         Grade12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        Grade12.add(t25, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
-        Grade12.add(t26, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
-        Grade12.add(t27, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
-        Grade12.add(t28, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
-        Grade12.add(t29, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
-        Grade12.add(t30, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
-        Grade12.add(t31, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 500, 100, 40));
 
-        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel136.setText("First Quarter");
-        jLabel136.setToolTipText("");
-        Grade12.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
-        Grade12.add(p25, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 620, 100, 40));
-        Grade12.add(p26, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 620, 100, 40));
-        Grade12.add(p27, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 620, 100, 40));
-        Grade12.add(p28, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 40));
-        Grade12.add(p29, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 620, 100, 40));
-        Grade12.add(p30, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 620, 100, 40));
-        Grade12.add(p31, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 40));
-
-        jLabel137.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel137.setText("Second Quarter");
-        Grade12.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, -1, -1));
-
-        bt11.setText("Calculate Second Quarter");
-        bt11.addActionListener(new java.awt.event.ActionListener() {
+        jButton9.setText("Close");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt11ActionPerformed(evt);
+                jButton9ActionPerformed(evt);
             }
         });
-        Grade12.add(bt11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 580, -1, -1));
+        Grade12.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, 100, 30));
+        Grade12.add(g1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
+        Grade12.add(g2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
+        Grade12.add(g4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
+        Grade12.add(g3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
+        Grade12.add(g6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
+        Grade12.add(g5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
+        Grade12.add(g9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 500, 100, 40));
 
-        out11.setEditable(false);
-        out11.setToolTipText("");
-        Grade12.add(out11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 510, 83, 32));
+        jLabel134.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel134.setText("First Quarter");
+        jLabel134.setToolTipText("");
+        Grade12.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
+        Grade12.add(q9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 620, 100, 40));
+        Grade12.add(q6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 620, 100, 40));
+        Grade12.add(q5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 620, 100, 40));
+        Grade12.add(q4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 40));
+        Grade12.add(q3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 620, 100, 40));
+        Grade12.add(q2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 620, 100, 40));
+        Grade12.add(q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 40));
 
-        out12.setEditable(false);
-        out12.setToolTipText("");
-        Grade12.add(out12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 610, 83, 32));
+        jLabel135.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel135.setText("Second Quarter");
+        Grade12.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, -1, -1));
 
-        bt12.setText("Calculate First Quarter");
-        bt12.addActionListener(new java.awt.event.ActionListener() {
+        bt9.setText("Calculate Second Quarter");
+        bt9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt12ActionPerformed(evt);
+                bt9ActionPerformed(evt);
             }
         });
-        Grade12.add(bt12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 460, -1, -1));
+        Grade12.add(bt9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 570, -1, -1));
 
-        jLabel138.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel138.setText("Second Semester");
-        Grade12.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 320, -1));
+        out9.setEditable(false);
+        out9.setToolTipText("");
+        Grade12.add(out9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 510, 83, 32));
+
+        out10.setEditable(false);
+        out10.setToolTipText("");
+        Grade12.add(out10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 630, 83, 32));
+
+        bt10.setText("Calculate First Quarter");
+        bt10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt10ActionPerformed(evt);
+            }
+        });
+        Grade12.add(bt10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 460, -1, -1));
+
+        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel136.setText("Second Semester");
+        Grade12.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 320, -1));
 
         jLabel184.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel184.setText("Subject 1");
@@ -684,8 +740,8 @@ public class student extends javax.swing.JFrame {
         Grade12.add(jLabel185, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, -1, -1));
 
         jLabel186.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel186.setText("Subject 7");
-        Grade12.add(jLabel186, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
+        jLabel186.setText("Subject 9");
+        Grade12.add(jLabel186, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 470, -1, -1));
 
         jLabel187.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel187.setText("Subject 3");
@@ -713,8 +769,8 @@ public class student extends javax.swing.JFrame {
         Grade12.add(jLabel192, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, -1, -1));
 
         jLabel193.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel193.setText("Subject 7");
-        Grade12.add(jLabel193, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 590, -1, -1));
+        jLabel193.setText("Subject 9");
+        Grade12.add(jLabel193, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 590, -1, -1));
 
         jLabel194.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel194.setText("Subject 3");
@@ -733,185 +789,183 @@ public class student extends javax.swing.JFrame {
         jLabel197.setText("Subject 4");
         Grade12.add(jLabel197, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
 
-        jButton7.setText("Back");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        h1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                h1ActionPerformed(evt);
             }
         });
-        Grade12.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 20, 100, 30));
-        Grade12.add(f11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
+        Grade12.add(h1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
+        Grade12.add(h2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 100, 40));
+        Grade12.add(h4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
+        Grade12.add(h3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
+        Grade12.add(h6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
+        Grade12.add(h5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
 
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel76.setText("Empowerment");
-        Grade12.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
+        jLabel99.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel99.setText("First Quarter");
+        jLabel99.setToolTipText("");
+        Grade12.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        Grade12.add(p8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
+        Grade12.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
+        Grade12.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
+        Grade12.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
+        Grade12.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
+        Grade12.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
+        Grade12.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
 
-        jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel77.setText("Physical");
-        Grade12.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 150, -1, -1));
-        Grade12.add(f12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 100, 40));
-        Grade12.add(f14, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
+        jLabel100.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel100.setText("Second Quarter");
+        Grade12.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
-        jLabel78.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel78.setText("Reading and ");
-        Grade12.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 150, -1, -1));
-        Grade12.add(f13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
-
-        jLabel79.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel79.setText("Oral ");
-        Grade12.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, -1, 20));
-        Grade12.add(f16, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
-
-        jLabel80.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel80.setText("21ST Century");
-        Grade12.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 160, -1, -1));
-        Grade12.add(f15, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
-
-        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel82.setText("Earth ");
-        jLabel82.setToolTipText("");
-        Grade12.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 150, -1, -1));
-
-        jLabel83.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel83.setText("First Quarter");
-        jLabel83.setToolTipText("");
-        Grade12.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
-        Grade12.add(s17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
-        Grade12.add(s16, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
-        Grade12.add(s15, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
-        Grade12.add(s14, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
-        Grade12.add(s13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
-        Grade12.add(s12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
-        Grade12.add(s11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
-
-        jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel91.setText("Second Quarter");
-        Grade12.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
-
-        bt2.setText("Calculate Second Quarter");
-        bt2.addActionListener(new java.awt.event.ActionListener() {
+        bt5.setText("Calculate Second Quarter");
+        bt5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt2ActionPerformed(evt);
+                bt5ActionPerformed(evt);
             }
         });
-        Grade12.add(bt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 280, -1, -1));
+        Grade12.add(bt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 280, -1, -1));
 
-        out1.setEditable(false);
-        out1.setToolTipText("");
-        out1.addActionListener(new java.awt.event.ActionListener() {
+        out5.setEditable(false);
+        out5.setToolTipText("");
+        out5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                out1ActionPerformed(evt);
+                out5ActionPerformed(evt);
             }
         });
-        Grade12.add(out1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 200, 83, 32));
+        Grade12.add(out5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 210, 83, 32));
 
-        out2.setEditable(false);
-        out2.setToolTipText("");
-        Grade12.add(out2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 330, 83, 32));
+        out6.setEditable(false);
+        out6.setToolTipText("");
+        Grade12.add(out6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 320, 83, 32));
 
-        bt1.setText("Calculate First Quarter");
-        bt1.addActionListener(new java.awt.event.ActionListener() {
+        bt6.setText("Calculate First Quarter");
+        bt6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt1ActionPerformed(evt);
+                bt6ActionPerformed(evt);
             }
         });
-        Grade12.add(bt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 160, -1, -1));
+        Grade12.add(bt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 160, -1, -1));
 
-        jLabel113.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel113.setText("First Semester");
-        Grade12.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 260, -1));
+        jLabel115.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel115.setText("First Semester");
+        Grade12.add(jLabel115, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 260, -1));
+        Grade12.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
+        Grade12.add(h7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
+        Grade12.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
 
-        jLabel109.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel109.setText("Computer");
-        Grade12.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 150, -1, -1));
-        Grade12.add(f18, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
-        Grade12.add(f19, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
-        Grade12.add(f21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
+        jLabel237.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel237.setText("Subject 1");
+        Grade12.add(jLabel237, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
-        jLabel2.setText("Technology");
-        Grade12.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, -1, -1));
+        jLabel238.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel238.setText("Subject 2");
+        Grade12.add(jLabel238, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, -1, -1));
 
-        jLabel4.setText("Education");
-        Grade12.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, -1, -1));
+        jLabel239.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel239.setText("Subject 9");
+        Grade12.add(jLabel239, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 170, -1, -1));
 
-        jLabel5.setText("Communication");
-        Grade12.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 180, -1, 10));
+        jLabel240.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel240.setText("Subject 3");
+        Grade12.add(jLabel240, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 20));
 
-        jLabel6.setText("Hardware");
-        Grade12.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, -1, -1));
+        jLabel241.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel241.setText("Subject 6");
+        Grade12.add(jLabel241, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 170, -1, -1));
 
-        jLabel7.setText("& Life Science");
-        Grade12.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, -1, -1));
+        jLabel242.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel242.setText("Subject 5");
+        jLabel242.setToolTipText("");
+        Grade12.add(jLabel242, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, -1, -1));
 
-        jLabel8.setText("Writing");
-        Grade12.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 180, -1, -1));
+        jLabel243.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel243.setText("Subject 4");
+        Grade12.add(jLabel243, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, -1, -1));
+        Grade12.add(h8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, 100, 40));
 
-        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel84.setText("Empowerment");
-        Grade12.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, -1, -1));
+        h9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                h9ActionPerformed(evt);
+            }
+        });
+        Grade12.add(h9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 200, 100, 40));
 
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel85.setText("Physical");
-        Grade12.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, -1, -1));
+        jLabel244.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel244.setText("Subject 7");
+        Grade12.add(jLabel244, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 170, -1, -1));
 
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel86.setText("Reading and ");
-        Grade12.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 260, -1, -1));
+        jLabel245.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel245.setText("Subject 8");
+        Grade12.add(jLabel245, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
 
-        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel87.setText("Oral ");
-        Grade12.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, -1, 20));
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setText("Please type N/A if you have less Subject");
+        jLabel11.setAutoscrolls(true);
+        Grade12.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 330, 40));
 
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel88.setText("21ST Century");
-        Grade12.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 270, -1, -1));
+        jLabel246.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel246.setText("Subject 1");
+        Grade12.add(jLabel246, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, -1, -1));
 
-        jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel89.setText("General ");
-        Grade12.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 260, -1, -1));
+        jLabel247.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel247.setText("Subject 2");
+        Grade12.add(jLabel247, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, -1));
 
-        jLabel90.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel90.setText("Earth ");
-        jLabel90.setToolTipText("");
-        Grade12.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, -1, -1));
+        jLabel248.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel248.setText("Subject 9");
+        Grade12.add(jLabel248, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 280, -1, -1));
 
-        jLabel128.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel128.setText("Computer");
-        Grade12.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 260, -1, 20));
+        jLabel249.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel249.setText("Subject 3");
+        Grade12.add(jLabel249, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, 20));
 
-        jLabel129.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel129.setText("Computer");
-        Grade12.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, -1, -1));
+        jLabel250.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel250.setText("Subject 6");
+        Grade12.add(jLabel250, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, -1, -1));
 
-        jLabel12.setText("Technology");
-        Grade12.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, -1, -1));
+        jLabel251.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel251.setText("Subject 5");
+        jLabel251.setToolTipText("");
+        Grade12.add(jLabel251, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, -1, -1));
 
-        jLabel13.setText("Education");
-        Grade12.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, -1));
+        jLabel252.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel252.setText("Subject 4");
+        Grade12.add(jLabel252, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
 
-        jLabel14.setText("Communication");
-        Grade12.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, 10));
+        jLabel253.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel253.setText("Subject 7");
+        Grade12.add(jLabel253, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 280, -1, -1));
 
-        jLabel15.setText("Hardware");
-        Grade12.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, -1, -1));
+        jLabel254.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel254.setText("Subject 8");
+        Grade12.add(jLabel254, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 280, -1, -1));
+        Grade12.add(g7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 100, 40));
+        Grade12.add(g8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 500, 100, 40));
+        Grade12.add(q7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, 100, 40));
+        Grade12.add(q8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 620, 100, 40));
 
-        jLabel16.setText("& Life Science");
-        Grade12.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 290, -1, -1));
+        jLabel255.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel255.setText("Subject 7");
+        Grade12.add(jLabel255, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
 
-        jLabel17.setText("Writing");
-        Grade12.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 290, -1, -1));
+        jLabel256.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel256.setText("Subject 8");
+        Grade12.add(jLabel256, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 470, -1, -1));
 
-        jLabel18.setText("Mathematics");
-        Grade12.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 290, -1, -1));
+        jLabel257.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel257.setText("Subject 7");
+        Grade12.add(jLabel257, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 590, -1, -1));
 
-        jLabel19.setText("Hardware");
-        Grade12.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 290, -1, 10));
+        jLabel258.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel258.setText("Subject 8");
+        Grade12.add(jLabel258, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 590, -1, -1));
 
         Grade.add(Grade12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1590, 950));
 
+        College.setForeground(new java.awt.Color(255, 255, 255));
         College.setVisible(false);
         College.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        College.add(f44, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
+        College.add(f1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 100, 40));
 
         jLabel130.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel130.setText("Subject 1");
@@ -920,28 +974,28 @@ public class student extends javax.swing.JFrame {
         jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel141.setText("Subject 2");
         College.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, -1, -1));
-        College.add(f45, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 100, 40));
-        College.add(f46, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
+        College.add(f2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 100, 40));
+        College.add(f4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 100, 40));
 
         jLabel142.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel142.setText("Subject 7");
         College.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 170, -1, -1));
-        College.add(f47, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
+        College.add(f3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 100, 40));
 
         jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel143.setText("Subject 3");
         College.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 20));
-        College.add(f48, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
+        College.add(f6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 100, 40));
 
         jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel144.setText("Subject 6");
         College.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 170, -1, -1));
-        College.add(f49, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
+        College.add(f5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 200, 100, 40));
 
         jLabel145.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel145.setText("Subject 8");
         College.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
-        College.add(f50, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, 100, 40));
+        College.add(f8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, 100, 40));
 
         jLabel146.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel146.setText("Subject 5");
@@ -952,13 +1006,13 @@ public class student extends javax.swing.JFrame {
         jLabel147.setText("First Quarter");
         jLabel147.setToolTipText("");
         College.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
-        College.add(s32, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
-        College.add(s33, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
-        College.add(s34, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
-        College.add(s35, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
-        College.add(s36, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
-        College.add(s37, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
-        College.add(s38, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
+        College.add(s8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 310, 100, 40));
+        College.add(s7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 310, 100, 40));
+        College.add(s6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 310, 100, 40));
+        College.add(s4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, 100, 40));
+        College.add(s3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, 40));
+        College.add(s2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 100, 40));
+        College.add(s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 40));
 
         jLabel148.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel148.setText("Second Quarter");
@@ -996,53 +1050,6 @@ public class student extends javax.swing.JFrame {
         jLabel149.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel149.setText("First Semester");
         College.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 260, -1));
-        College.add(t32, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
-        College.add(t33, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
-        College.add(t34, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
-        College.add(t35, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
-        College.add(t36, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
-        College.add(t37, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
-        College.add(t38, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 500, 100, 40));
-
-        jLabel150.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel150.setText("First Quarter");
-        jLabel150.setToolTipText("");
-        College.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
-        College.add(p32, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 620, 100, 40));
-        College.add(p33, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 620, 100, 40));
-        College.add(p34, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 620, 100, 40));
-        College.add(p35, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, 100, 40));
-        College.add(p36, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 620, 100, 40));
-        College.add(p37, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 620, 100, 40));
-        College.add(p38, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 100, 40));
-
-        jLabel151.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel151.setText("Second Quarter");
-        College.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, -1, -1));
-
-        bt15.setText("Calculate Second Quarter");
-        bt15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt15ActionPerformed(evt);
-            }
-        });
-        College.add(bt15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 580, -1, -1));
-
-        out15.setEditable(false);
-        out15.setToolTipText("");
-        College.add(out15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 510, 83, 32));
-
-        out16.setEditable(false);
-        out16.setToolTipText("");
-        College.add(out16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 610, 83, 32));
-
-        bt16.setText("Calculate First Quarter");
-        bt16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt16ActionPerformed(evt);
-            }
-        });
-        College.add(bt16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 460, -1, -1));
 
         jLabel198.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel198.setText("Second Semester");
@@ -1055,10 +1062,10 @@ public class student extends javax.swing.JFrame {
         jLabel200.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel200.setText("Subject 4");
         College.add(jLabel200, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, -1, -1));
-        College.add(f51, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
-        College.add(f52, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
-        College.add(f53, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 200, 100, 40));
-        College.add(f54, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
+        College.add(s5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 100, 40));
+        College.add(f7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 200, 100, 40));
+        College.add(f9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 200, 100, 40));
+        College.add(s9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 310, 100, 40));
 
         jLabel201.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel201.setText("Subject 1");
@@ -1097,78 +1104,163 @@ public class student extends javax.swing.JFrame {
         jLabel209.setText("Subject 4");
         College.add(jLabel209, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
 
-        jLabel210.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel210.setText("Subject 1");
-        College.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, -1, -1));
-
-        jLabel211.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel211.setText("Subject 2");
-        College.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, -1, -1));
-
-        jLabel212.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel212.setText("Subject 7");
-        College.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
-
-        jLabel213.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel213.setText("Subject 3");
-        College.add(jLabel213, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, -1, 20));
-
-        jLabel214.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel214.setText("Subject 6");
-        College.add(jLabel214, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 470, -1, -1));
-
-        jLabel215.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel215.setText("Subject 5");
-        jLabel215.setToolTipText("");
-        College.add(jLabel215, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, -1, -1));
-
-        jLabel216.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel216.setText("Subject 4");
-        College.add(jLabel216, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, -1, -1));
-
-        jLabel217.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel217.setText("Subject 1");
-        College.add(jLabel217, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, -1, -1));
-
-        jLabel218.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel218.setText("Subject 2");
-        College.add(jLabel218, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, -1, -1));
-
-        jLabel219.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel219.setText("Subject 7");
-        College.add(jLabel219, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 590, -1, -1));
-
-        jLabel220.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel220.setText("Subject 3");
-        College.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 590, -1, 20));
-
-        jLabel221.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel221.setText("Subject 6");
-        College.add(jLabel221, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 590, -1, -1));
-
-        jLabel222.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel222.setText("Subject 5");
-        jLabel222.setToolTipText("");
-        College.add(jLabel222, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 590, -1, -1));
-
-        jLabel223.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel223.setText("Subject 4");
-        College.add(jLabel223, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 590, -1, -1));
-
-        jButton8.setText("Back");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        jButton10.setText("Close");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                jButton10ActionPerformed(evt);
             }
         });
-        College.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 30, 100, 30));
+        College.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, 100, 30));
+        College.add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 100, 40));
+
+        jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel137.setText("Subject 1");
+        College.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, -1, -1));
+
+        jLabel150.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel150.setText("Subject 2");
+        College.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, -1, -1));
+        College.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 100, 40));
+        College.add(r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 100, 40));
+
+        jLabel151.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel151.setText("Subject 7");
+        College.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 470, -1, -1));
+        College.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, 100, 40));
+
+        jLabel152.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel152.setText("Subject 3");
+        College.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, -1, 20));
+        College.add(r6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 500, 100, 40));
+
+        jLabel153.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel153.setText("Subject 6");
+        College.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 470, -1, -1));
+        College.add(r5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 100, 40));
+
+        jLabel154.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel154.setText("Subject 8");
+        College.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 470, -1, -1));
+        College.add(r8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 500, 100, 40));
+
+        jLabel155.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel155.setText("Subject 5");
+        jLabel155.setToolTipText("");
+        College.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, -1, -1));
+
+        jLabel156.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel156.setText("First Quarter");
+        jLabel156.setToolTipText("");
+        College.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, -1, -1));
+        College.add(w8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 610, 100, 40));
+        College.add(w7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 610, 100, 40));
+        College.add(w6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 610, 100, 40));
+        College.add(w4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 610, 100, 40));
+        College.add(w3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 610, 100, 40));
+        College.add(w2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 610, 100, 40));
+        College.add(w1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 610, 100, 40));
+
+        jLabel157.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel157.setText("Second Quarter");
+        College.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, -1, -1));
+
+        bt15.setText("Calculate Second Quarter");
+        bt15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt15ActionPerformed(evt);
+            }
+        });
+        College.add(bt15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 580, -1, -1));
+
+        out15.setEditable(false);
+        out15.setToolTipText("");
+        out15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                out15ActionPerformed(evt);
+            }
+        });
+        College.add(out15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 500, 83, 32));
+
+        out16.setEditable(false);
+        out16.setToolTipText("");
+        College.add(out16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 630, 83, 32));
+
+        bt16.setText("Calculate First Quarter");
+        bt16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt16ActionPerformed(evt);
+            }
+        });
+        College.add(bt16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 460, -1, -1));
+
+        jLabel210.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel210.setText("Subject 9");
+        College.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 470, -1, 20));
+
+        jLabel211.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel211.setText("Subject 4");
+        College.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, -1, -1));
+        College.add(w5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 610, 100, 40));
+        College.add(r7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 100, 40));
+        College.add(r9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 500, 100, 40));
+        College.add(w9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 610, 100, 40));
+
+        jLabel212.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel212.setText("Subject 1");
+        College.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, -1, -1));
+
+        jLabel213.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel213.setText("Subject 2");
+        College.add(jLabel213, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 580, -1, -1));
+
+        jLabel214.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel214.setText("Subject 7");
+        College.add(jLabel214, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 580, -1, -1));
+
+        jLabel215.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel215.setText("Subject 3");
+        College.add(jLabel215, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 580, -1, 20));
+
+        jLabel216.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel216.setText("Subject 6");
+        College.add(jLabel216, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 580, -1, -1));
+
+        jLabel217.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel217.setText("Subject 8");
+        College.add(jLabel217, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 580, -1, -1));
+
+        jLabel218.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel218.setText("Subject 5");
+        jLabel218.setToolTipText("");
+        College.add(jLabel218, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 580, -1, -1));
+
+        jLabel219.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel219.setText("Subject 9");
+        College.add(jLabel219, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 580, -1, 20));
+
+        jLabel220.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel220.setText("Subject 4");
+        College.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 580, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel12.setText("Please type N/A if you have less Subject");
+        jLabel12.setAutoscrolls(true);
+        College.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 330, 40));
 
         Grade.add(College, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1590, 950));
+
+        jButton7.setText("Close");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        Grade.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, 100, 30));
 
         getContentPane().add(Grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 1590, 950));
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, -1));
+        getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -100, 2180, 1380));
 
         pack();
         setLocationRelativeTo(null);
@@ -1176,8 +1268,7 @@ public class student extends javax.swing.JFrame {
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
 
-        new HomePage().setVisible(true);
-        this.dispose();
+       
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel9MouseClicked
@@ -1189,59 +1280,121 @@ public class student extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt5ActionPerformed
+    private void bt7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt7ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
 
-    private void out123ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_out123ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_out123ActionPerformed
+   
+    javax.swing.JTextField[] fields = {b1, b2, b3, b4, b5, b6, b7, b8, b9};
 
-    private void bt6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt6ActionPerformed
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
 
-        try {
-    if (txt1.getText().isEmpty() || txt2.getText().isEmpty() || txt3.getText().isEmpty() ||
-        txt4.getText().isEmpty() || txt5.getText().isEmpty() || txt6.getText().isEmpty() ||
-        txt7.getText().isEmpty() || txt8.getText().isEmpty() || txt9.getText().isEmpty()) {
-        
-        javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade!");
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
         return;
     }
 
-    int a = Integer.parseInt(txt1.getText());
-    int b = Integer.parseInt(txt2.getText());
-    int c = Integer.parseInt(txt3.getText());
-    int d = Integer.parseInt(txt4.getText());
-    int e = Integer.parseInt(txt5.getText());
-    int f = Integer.parseInt(txt6.getText());
-    int g = Integer.parseInt(txt7.getText());
-    int h = Integer.parseInt(txt8.getText());
-    int i = Integer.parseInt(txt9.getText());
+   
+    int result = sum / count;
+    out8.setText(String.valueOf(result));
 
-    if (a > 100 || b > 100 || c > 100 || d > 100 || e > 100 || f > 100 || g > 100 || h > 100 || i > 100) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Grades cannot exceed 100. Please enter valid grades.");
-        return;
-    }
-
-    // Ensure proper floating-point division
-    double result = (a + b + c + d + e + f + g + h + i) / 9.0;
-    out123.setText(String.format("", result)); // Display result with 2 decimal places
-
-} catch (NumberFormatException ex) {
-    javax.swing.JOptionPane.showMessageDialog(this, "Please enter valid numbers only!");
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
 }
 
 
 
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_bt6ActionPerformed
-
-    private void bt7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt7ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_bt7ActionPerformed
 
     private void bt8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt8ActionPerformed
+ try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {c1, c2, c3, c4, c5, c6, c7, c8, c9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out7.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_bt8ActionPerformed
 
@@ -1283,15 +1436,63 @@ button3.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_button3ActionPerformed
 
-    private void bt11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt11ActionPerformed
-
-    private void bt12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt12ActionPerformed
-
     private void bt13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt13ActionPerformed
+try {
+    int sum = 0;  
+    int count = 0; 
+
+
+    javax.swing.JTextField[] fields = {s1, s2, s3, s4, s5, s6, s7, s8, s9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+        
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+        
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+               
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++; 
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+ 
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+    
+    int result = sum / count;
+    out14.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_bt13ActionPerformed
 
@@ -1300,114 +1501,627 @@ button3.setVisible(false);
     }//GEN-LAST:event_out13ActionPerformed
 
     private void bt14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt14ActionPerformed
+try {
+    int sum = 0;  
+    int count = 0; 
+
+
+    javax.swing.JTextField[] fields = {f1, f2, f3, f4, f5, f6, f7, f8, f9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+        
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+        
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+               
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++; 
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+ 
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+    
+    int result = sum / count;
+    out13.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+
+
+
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_bt14ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+
+        Grade.setVisible(true);
+        button1.setVisible(true);
+         button2.setVisible(true);
+          button3.setVisible(true);
+        Grade11.setVisible(false);
+Grade12.setVisible(false);
+College.setVisible(false);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+  Grade.setVisible(true);
+        button1.setVisible(true);
+         button2.setVisible(true);
+          button3.setVisible(true);
+        Grade11.setVisible(false);
+Grade12.setVisible(false);
+College.setVisible(false);
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+  Grade.setVisible(true);
+        button1.setVisible(true);
+         button2.setVisible(true);
+          button3.setVisible(true);
+        Grade11.setVisible(false);
+Grade12.setVisible(false);
+College.setVisible(false);
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
+try {
+    int sum = 0;  
+    int count = 0; 
+
+
+    javax.swing.JTextField[] fields = {a1, a2, a3, a4, a5, a6, a7, a8, a9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+        
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+        
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+               
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++; 
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+ 
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+    
+    int result = sum / count;
+    out4.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt3ActionPerformed
+
+    private void out3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_out3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_out3ActionPerformed
+
+    private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
+ try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {t1, t2, t3, t4, t5, t6, t7, t8, t9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out3.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt4ActionPerformed
+
+    private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_t1ActionPerformed
+
+    private void bt9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt9ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {q1, q2, q3, q4, q5, q6, q7, q8, q9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out10.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt9ActionPerformed
+
+    private void bt10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt10ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {g1, g2, g3, g4, g5, g6, g7, g8, g9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out9.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt10ActionPerformed
+
+    private void h1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_h1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_h1ActionPerformed
+
+    private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {p1, p2, p3, p4, p5, p6, p7, p8, p9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out6.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+        
+
+
+
+
+
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt5ActionPerformed
+
+    private void out5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_out5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_out5ActionPerformed
+
+    private void bt6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt6ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {h1, h2, h3, h4, h5, h6, h7, h8, h9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out5.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt6ActionPerformed
+
+    private void h9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_h9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_h9ActionPerformed
+
     private void bt15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt15ActionPerformed
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {w1, w2, w3, w4, w5, w6, w7,w8, w9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out16.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_bt15ActionPerformed
 
+    private void out15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_out15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_out15ActionPerformed
+
     private void bt16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt16ActionPerformed
+                                      
+try {
+    int sum = 0; 
+    int count = 0;
+
+   
+    javax.swing.JTextField[] fields = {r1, r2, r3, r4, r5, r6, r7, r8, r9};
+
+    for (javax.swing.JTextField field : fields) {
+        String text = field.getText().trim();
+
+       
+        if (text.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade or use 'N/A'!");
+            return;
+        }
+
+      
+        if (!text.equalsIgnoreCase("N/A")) {
+            try {
+                int grade = Integer.parseInt(text);
+
+                // Validate grade range
+                if (grade < 0 || grade > 100) {
+                    javax.swing.JOptionPane.showMessageDialog(this, "Grades must be between 0 and 100.");
+                    return;
+                }
+
+                sum += grade; 
+                count++;
+            } catch (NumberFormatException e) {
+                javax.swing.JOptionPane.showMessageDialog(this, "Invalid input! Enter numbers or 'N/A' only.");
+                return;
+            }
+        }
+    }
+
+  
+    if (count == 0) {
+        javax.swing.JOptionPane.showMessageDialog(this, "No valid grades entered!");
+        return;
+    }
+
+   
+    int result = sum / count;
+    out15.setText(String.valueOf(result));
+
+} catch (Exception ex) {
+    javax.swing.JOptionPane.showMessageDialog(this, "An unexpected error occurred.");
+}
+
+
+
+
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_bt16ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-Grade11.setVisible(true);
-        Grade.setVisible(true);
-button1.setVisible(false);
-button2.setVisible(false);
-button3.setVisible(false);  
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-Grade12.setVisible(true);
-        Grade.setVisible(true);
-button1.setVisible(false);
-button2.setVisible(false);
-button3.setVisible(false);
-// TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-College.setVisible(false);
-        Grade.setVisible(true);
-button1.setVisible(true);
-button2.setVisible(true);
-button3.setVisible(true);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
-        try {
-            if (s11.getText().isEmpty() || s12.getText().isEmpty() || s13.getText().isEmpty() ||
-                s14.getText().isEmpty() || s15.getText().isEmpty() || s16.getText().isEmpty() ||
-                s17.getText().isEmpty()) {
-
-                javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade!");
-                return;
-            }
-
-            int a = Integer.parseInt(s11.getText());
-            int b = Integer.parseInt(s12.getText());
-            int c = Integer.parseInt(s13.getText());
-            int d = Integer.parseInt(s14.getText());
-            int e = Integer.parseInt(s15.getText());
-            int f = Integer.parseInt(s16.getText());
-            int g = Integer.parseInt(s17.getText());
-            if (a > 99 || b > 99 || c > 99 || d > 99 || e > 99 || f > 99 || g > 99) {
-
-                javax.swing.JOptionPane.showMessageDialog(this, "Grades cannot exceed 100. Please enter valid grades.");
-                return;
-            }
-
-            int result = (a + b + c + d + e + f + g) / 7;
-            out2.setText(String.valueOf(result));
-
-        } catch (NumberFormatException ex) {
-            javax.swing.JOptionPane.showMessageDialog(this, "Please enter valid numbers only!");
-        }
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt2ActionPerformed
-
-    private void out1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_out1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_out1ActionPerformed
-
-    private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
-        try {
-            if (f11.getText().isEmpty() || f12.getText().isEmpty() || f13.getText().isEmpty() ||
-                f14.getText().isEmpty() || f15.getText().isEmpty() || f16.getText().isEmpty() ||
-                f19.getText().isEmpty()) {
-
-                javax.swing.JOptionPane.showMessageDialog(this, "You have a missing Grade, Please Input a Grade!");
-                return;
-            }
-
-            int a = Integer.parseInt(f11.getText());
-            int b = Integer.parseInt(f12.getText());
-            int c = Integer.parseInt(f13.getText());
-            int d = Integer.parseInt(f14.getText());
-            int e = Integer.parseInt(f15.getText());
-            int f = Integer.parseInt(f16.getText());
-            int g = Integer.parseInt(f19.getText());
-
-            if (a > 99 || b > 99 || c > 99 || d > 99 || e > 99 || f > 99 || g > 99) {
-
-                javax.swing.JOptionPane.showMessageDialog(this, "Grades cannot exceed 100. Please enter valid grades.");
-                return;
-            }
-
-            int result = (a + b + c + d + e + f + g) / 7;
-            out1.setText(String.valueOf(result));
-
-        } catch (NumberFormatException ex) {
-            javax.swing.JOptionPane.showMessageDialog(this, "Please enter valid numbers only!");
-        }
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1439,10 +2153,11 @@ button3.setVisible(true);
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new student().setVisible(true);
+                  new student().setVisible(true); 
             }
         });
-    }
+    
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BG;
@@ -1450,68 +2165,91 @@ button3.setVisible(true);
     private java.awt.Panel Grade;
     private java.awt.Panel Grade11;
     private java.awt.Panel Grade12;
-    private javax.swing.JButton bt1;
-    private javax.swing.JButton bt11;
-    private javax.swing.JButton bt12;
+    private javax.swing.JTextField a1;
+    private javax.swing.JTextField a2;
+    private javax.swing.JTextField a3;
+    private javax.swing.JTextField a4;
+    private javax.swing.JTextField a5;
+    private javax.swing.JTextField a6;
+    private javax.swing.JTextField a7;
+    private javax.swing.JTextField a8;
+    private javax.swing.JTextField a9;
+    private javax.swing.JTextField b1;
+    private javax.swing.JTextField b2;
+    private javax.swing.JTextField b3;
+    private javax.swing.JTextField b4;
+    private javax.swing.JTextField b5;
+    private javax.swing.JTextField b6;
+    private javax.swing.JTextField b7;
+    private javax.swing.JTextField b8;
+    private javax.swing.JTextField b9;
+    private javax.swing.JButton bt10;
     private javax.swing.JButton bt13;
     private javax.swing.JButton bt14;
     private javax.swing.JButton bt15;
     private javax.swing.JButton bt16;
-    private javax.swing.JButton bt2;
+    private javax.swing.JButton bt3;
+    private javax.swing.JButton bt4;
     private javax.swing.JButton bt5;
     private javax.swing.JButton bt6;
     private javax.swing.JButton bt7;
     private javax.swing.JButton bt8;
+    private javax.swing.JButton bt9;
     private java.awt.Button button1;
     private java.awt.Button button2;
     private java.awt.Button button3;
-    private javax.swing.JTextField f11;
-    private javax.swing.JTextField f12;
-    private javax.swing.JTextField f13;
-    private javax.swing.JTextField f14;
-    private javax.swing.JTextField f15;
-    private javax.swing.JTextField f16;
-    private javax.swing.JTextField f18;
-    private javax.swing.JTextField f19;
-    private javax.swing.JTextField f21;
-    private javax.swing.JTextField f29;
-    private javax.swing.JTextField f32;
-    private javax.swing.JTextField f44;
-    private javax.swing.JTextField f45;
-    private javax.swing.JTextField f46;
-    private javax.swing.JTextField f47;
-    private javax.swing.JTextField f48;
-    private javax.swing.JTextField f49;
-    private javax.swing.JTextField f50;
-    private javax.swing.JTextField f51;
-    private javax.swing.JTextField f52;
-    private javax.swing.JTextField f53;
-    private javax.swing.JTextField f54;
+    private javax.swing.JTextField c1;
+    private javax.swing.JTextField c2;
+    private javax.swing.JTextField c3;
+    private javax.swing.JTextField c4;
+    private javax.swing.JTextField c5;
+    private javax.swing.JTextField c6;
+    private javax.swing.JTextField c7;
+    private javax.swing.JTextField c8;
+    private javax.swing.JTextField c9;
+    private javax.swing.JTextField f1;
+    private javax.swing.JTextField f2;
+    private javax.swing.JTextField f3;
+    private javax.swing.JTextField f4;
+    private javax.swing.JTextField f5;
+    private javax.swing.JTextField f6;
+    private javax.swing.JTextField f7;
+    private javax.swing.JTextField f8;
+    private javax.swing.JTextField f9;
+    private javax.swing.JTextField g1;
+    private javax.swing.JTextField g2;
+    private javax.swing.JTextField g3;
+    private javax.swing.JTextField g4;
+    private javax.swing.JTextField g5;
+    private javax.swing.JTextField g6;
+    private javax.swing.JTextField g7;
+    private javax.swing.JTextField g8;
+    private javax.swing.JTextField g9;
+    private javax.swing.JTextField h1;
+    private javax.swing.JTextField h2;
+    private javax.swing.JTextField h3;
+    private javax.swing.JTextField h4;
+    private javax.swing.JTextField h5;
+    private javax.swing.JTextField h6;
+    private javax.swing.JTextField h7;
+    private javax.swing.JTextField h8;
+    private javax.swing.JTextField h9;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel109;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel117;
-    private javax.swing.JLabel jLabel118;
-    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel120;
-    private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel128;
-    private javax.swing.JLabel jLabel129;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel131;
     private javax.swing.JLabel jLabel132;
@@ -1520,8 +2258,6 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel135;
     private javax.swing.JLabel jLabel136;
     private javax.swing.JLabel jLabel137;
-    private javax.swing.JLabel jLabel138;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel141;
     private javax.swing.JLabel jLabel142;
     private javax.swing.JLabel jLabel143;
@@ -1531,7 +2267,6 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel147;
     private javax.swing.JLabel jLabel148;
     private javax.swing.JLabel jLabel149;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel150;
     private javax.swing.JLabel jLabel151;
     private javax.swing.JLabel jLabel152;
@@ -1540,10 +2275,6 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel155;
     private javax.swing.JLabel jLabel156;
     private javax.swing.JLabel jLabel157;
-    private javax.swing.JLabel jLabel158;
-    private javax.swing.JLabel jLabel159;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel160;
     private javax.swing.JLabel jLabel161;
     private javax.swing.JLabel jLabel162;
     private javax.swing.JLabel jLabel163;
@@ -1553,20 +2284,26 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel167;
     private javax.swing.JLabel jLabel168;
     private javax.swing.JLabel jLabel169;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel170;
     private javax.swing.JLabel jLabel171;
     private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
     private javax.swing.JLabel jLabel174;
+    private javax.swing.JLabel jLabel175;
     private javax.swing.JLabel jLabel176;
-    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
+    private javax.swing.JLabel jLabel182;
+    private javax.swing.JLabel jLabel183;
     private javax.swing.JLabel jLabel184;
     private javax.swing.JLabel jLabel185;
     private javax.swing.JLabel jLabel186;
     private javax.swing.JLabel jLabel187;
     private javax.swing.JLabel jLabel188;
     private javax.swing.JLabel jLabel189;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel190;
     private javax.swing.JLabel jLabel191;
     private javax.swing.JLabel jLabel192;
@@ -1577,7 +2314,6 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel197;
     private javax.swing.JLabel jLabel198;
     private javax.swing.JLabel jLabel199;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel200;
     private javax.swing.JLabel jLabel201;
     private javax.swing.JLabel jLabel202;
@@ -1599,114 +2335,111 @@ button3.setVisible(true);
     private javax.swing.JLabel jLabel218;
     private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel220;
-    private javax.swing.JLabel jLabel221;
-    private javax.swing.JLabel jLabel222;
-    private javax.swing.JLabel jLabel223;
+    private javax.swing.JLabel jLabel224;
+    private javax.swing.JLabel jLabel225;
+    private javax.swing.JLabel jLabel226;
+    private javax.swing.JLabel jLabel227;
+    private javax.swing.JLabel jLabel228;
+    private javax.swing.JLabel jLabel229;
+    private javax.swing.JLabel jLabel230;
+    private javax.swing.JLabel jLabel231;
+    private javax.swing.JLabel jLabel232;
+    private javax.swing.JLabel jLabel233;
+    private javax.swing.JLabel jLabel234;
+    private javax.swing.JLabel jLabel235;
+    private javax.swing.JLabel jLabel236;
+    private javax.swing.JLabel jLabel237;
+    private javax.swing.JLabel jLabel238;
+    private javax.swing.JLabel jLabel239;
+    private javax.swing.JLabel jLabel240;
+    private javax.swing.JLabel jLabel241;
+    private javax.swing.JLabel jLabel242;
+    private javax.swing.JLabel jLabel243;
+    private javax.swing.JLabel jLabel244;
+    private javax.swing.JLabel jLabel245;
+    private javax.swing.JLabel jLabel246;
+    private javax.swing.JLabel jLabel247;
+    private javax.swing.JLabel jLabel248;
+    private javax.swing.JLabel jLabel249;
+    private javax.swing.JLabel jLabel250;
+    private javax.swing.JLabel jLabel251;
+    private javax.swing.JLabel jLabel252;
+    private javax.swing.JLabel jLabel253;
+    private javax.swing.JLabel jLabel254;
+    private javax.swing.JLabel jLabel255;
+    private javax.swing.JLabel jLabel256;
+    private javax.swing.JLabel jLabel257;
+    private javax.swing.JLabel jLabel258;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
-    private javax.swing.JLabel jLabel88;
-    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabel90;
-    private javax.swing.JLabel jLabel91;
-    private javax.swing.JTextField out1;
-    private javax.swing.JTextField out11;
-    private javax.swing.JTextField out12;
-    private javax.swing.JTextField out123;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
+    private javax.swing.JTextField out10;
     private javax.swing.JTextField out13;
     private javax.swing.JTextField out14;
     private javax.swing.JTextField out15;
     private javax.swing.JTextField out16;
-    private javax.swing.JTextField out2;
+    private javax.swing.JTextField out3;
+    private javax.swing.JTextField out4;
+    private javax.swing.JTextField out5;
     private javax.swing.JTextField out6;
     private javax.swing.JTextField out7;
     private javax.swing.JTextField out8;
-    private javax.swing.JTextField p18;
-    private javax.swing.JTextField p19;
-    private javax.swing.JTextField p20;
-    private javax.swing.JTextField p21;
-    private javax.swing.JTextField p22;
-    private javax.swing.JTextField p23;
-    private javax.swing.JTextField p24;
-    private javax.swing.JTextField p25;
-    private javax.swing.JTextField p26;
-    private javax.swing.JTextField p27;
-    private javax.swing.JTextField p28;
-    private javax.swing.JTextField p29;
-    private javax.swing.JTextField p30;
-    private javax.swing.JTextField p31;
-    private javax.swing.JTextField p32;
-    private javax.swing.JTextField p33;
-    private javax.swing.JTextField p34;
-    private javax.swing.JTextField p35;
-    private javax.swing.JTextField p36;
-    private javax.swing.JTextField p37;
-    private javax.swing.JTextField p38;
-    private javax.swing.JTextField s11;
-    private javax.swing.JTextField s12;
-    private javax.swing.JTextField s13;
-    private javax.swing.JTextField s14;
-    private javax.swing.JTextField s15;
-    private javax.swing.JTextField s16;
-    private javax.swing.JTextField s17;
-    private javax.swing.JTextField s18;
-    private javax.swing.JTextField s19;
-    private javax.swing.JTextField s20;
-    private javax.swing.JTextField s21;
-    private javax.swing.JTextField s22;
-    private javax.swing.JTextField s23;
-    private javax.swing.JTextField s24;
-    private javax.swing.JTextField s32;
-    private javax.swing.JTextField s33;
-    private javax.swing.JTextField s34;
-    private javax.swing.JTextField s35;
-    private javax.swing.JTextField s36;
-    private javax.swing.JTextField s37;
-    private javax.swing.JTextField s38;
-    private javax.swing.JTextField t18;
-    private javax.swing.JTextField t19;
-    private javax.swing.JTextField t20;
-    private javax.swing.JTextField t21;
-    private javax.swing.JTextField t22;
-    private javax.swing.JTextField t23;
-    private javax.swing.JTextField t24;
-    private javax.swing.JTextField t25;
-    private javax.swing.JTextField t26;
-    private javax.swing.JTextField t27;
-    private javax.swing.JTextField t28;
-    private javax.swing.JTextField t29;
-    private javax.swing.JTextField t30;
-    private javax.swing.JTextField t31;
-    private javax.swing.JTextField t32;
-    private javax.swing.JTextField t33;
-    private javax.swing.JTextField t34;
-    private javax.swing.JTextField t35;
-    private javax.swing.JTextField t36;
-    private javax.swing.JTextField t37;
-    private javax.swing.JTextField t38;
-    private javax.swing.JTextField txt1;
-    private javax.swing.JTextField txt2;
-    private javax.swing.JTextField txt3;
-    private javax.swing.JTextField txt4;
-    private javax.swing.JTextField txt5;
-    private javax.swing.JTextField txt6;
-    private javax.swing.JTextField txt7;
-    private javax.swing.JTextField txt8;
-    private javax.swing.JTextField txt9;
+    private javax.swing.JTextField out9;
+    private javax.swing.JTextField p1;
+    private javax.swing.JTextField p2;
+    private javax.swing.JTextField p3;
+    private javax.swing.JTextField p4;
+    private javax.swing.JTextField p5;
+    private javax.swing.JTextField p6;
+    private javax.swing.JTextField p7;
+    private javax.swing.JTextField p8;
+    private javax.swing.JTextField p9;
+    private javax.swing.JTextField q1;
+    private javax.swing.JTextField q2;
+    private javax.swing.JTextField q3;
+    private javax.swing.JTextField q4;
+    private javax.swing.JTextField q5;
+    private javax.swing.JTextField q6;
+    private javax.swing.JTextField q7;
+    private javax.swing.JTextField q8;
+    private javax.swing.JTextField q9;
+    private javax.swing.JTextField r1;
+    private javax.swing.JTextField r2;
+    private javax.swing.JTextField r3;
+    private javax.swing.JTextField r4;
+    private javax.swing.JTextField r5;
+    private javax.swing.JTextField r6;
+    private javax.swing.JTextField r7;
+    private javax.swing.JTextField r8;
+    private javax.swing.JTextField r9;
+    private javax.swing.JTextField s1;
+    private javax.swing.JTextField s2;
+    private javax.swing.JTextField s3;
+    private javax.swing.JTextField s4;
+    private javax.swing.JTextField s5;
+    private javax.swing.JTextField s6;
+    private javax.swing.JTextField s7;
+    private javax.swing.JTextField s8;
+    private javax.swing.JTextField s9;
+    private javax.swing.JTextField t1;
+    private javax.swing.JTextField t2;
+    private javax.swing.JTextField t3;
+    private javax.swing.JTextField t4;
+    private javax.swing.JTextField t5;
+    private javax.swing.JTextField t6;
+    private javax.swing.JTextField t7;
+    private javax.swing.JTextField t8;
+    private javax.swing.JTextField t9;
+    private javax.swing.JTextField w1;
+    private javax.swing.JTextField w2;
+    private javax.swing.JTextField w3;
+    private javax.swing.JTextField w4;
+    private javax.swing.JTextField w5;
+    private javax.swing.JTextField w6;
+    private javax.swing.JTextField w7;
+    private javax.swing.JTextField w8;
+    private javax.swing.JTextField w9;
     // End of variables declaration//GEN-END:variables
 }
