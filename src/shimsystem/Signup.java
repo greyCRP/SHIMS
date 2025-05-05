@@ -36,7 +36,7 @@ public class Signup extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
-        panel1 = new java.awt.Panel();
+        Panel = new java.awt.Panel();
         LoginLeft = new java.awt.Panel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -65,9 +65,9 @@ public class Signup extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel1.setBackground(new java.awt.Color(153, 153, 153));
-        panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
+        Panel.setBackground(new java.awt.Color(153, 153, 153));
+        Panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 500));
 
         LoginLeft.setPreferredSize(new java.awt.Dimension(393, 400));
         LoginLeft.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -283,6 +283,7 @@ try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Panel LoginLeft;
+    private java.awt.Panel Panel;
     private javax.swing.JTextField emailField;
     private javax.swing.JTextField idField;
     private javax.swing.JButton jButton1;
@@ -303,7 +304,6 @@ try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField nameField;
-    private java.awt.Panel panel1;
     private javax.swing.JPasswordField passField;
     private javax.swing.JComboBox<String> roleBox;
     // End of variables declaration//GEN-END:variables
