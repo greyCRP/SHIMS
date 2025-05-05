@@ -4,6 +4,13 @@
  */
 package shimsystem;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author dell
@@ -30,19 +37,18 @@ public class admin extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        Students = new javax.swing.JTable();
+        StudentTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -51,24 +57,35 @@ public class admin extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 204, 204));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Update");
-        panel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 150, 50));
+        jButton1.setText("SHOW");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        panel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 150, 50));
 
         jButton2.setBackground(new java.awt.Color(0, 153, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Add");
-        panel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 150, 50));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        panel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 560, 150, 50));
 
         jButton3.setBackground(new java.awt.Color(204, 0, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Remove");
-        panel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 150, 50));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        panel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 150, 50));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Light Khaki.jpg"))); // NOI18N
-        jLabel12.setToolTipText("");
-        panel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 300));
-
-        Students.setModel(new javax.swing.table.DefaultTableModel(
+        StudentTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -76,15 +93,22 @@ public class admin extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Student Name", "Student ID", "Student Pasword", "Student Gmail"
             }
-        ));
-        Students.setDropMode(javax.swing.DropMode.INSERT);
-        jScrollPane1.setViewportView(Students);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
 
-        panel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 870, 270));
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(StudentTable);
 
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 570));
+        panel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
+
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,7 +128,7 @@ public class admin extends javax.swing.JFrame {
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 0, -1, 50));
 
         jButton4.setText("Teacher management");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 260, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 260, 60));
 
         jButton5.setText("Student management");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -112,10 +136,7 @@ public class admin extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 260, 60));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1200, 630));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 260, 60));
 
         jLabel4.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -149,6 +170,9 @@ public class admin extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("TEACHER PANEL");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, -1, 50));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1200, 690));
 
         pack();
         setLocationRelativeTo(null);
@@ -192,6 +216,92 @@ public class admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel6MouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+          DefaultTableModel model = (DefaultTableModel) StudentTable.getModel(); // or studentTable if that's the correct name
+    model.setRowCount(0); // Clear existing rows
+
+    String url = "jdbc:mysql://localhost:3306/testdb";
+    String dbUsername = "root";
+    String dbPassword = "";
+
+    try (
+        Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+        PreparedStatement pst = conn.prepareStatement("SELECT FullName, StudentNo, Gmail, Password FROM students");
+        ResultSet rs = pst.executeQuery()
+    ) {
+        while (rs.next()) {
+            String fullName = rs.getString("FullName");
+            String studentNo = rs.getString("StudentNo");
+            String password = rs.getString("Password");
+            String gmail = rs.getString("Gmail");
+
+            // Match the order of columns
+            model.addRow(new Object[]{fullName, studentNo, password, gmail});
+        }
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+    }
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+         int selectedRow = StudentTable.getSelectedRow(); // or studentTable
+
+    if (selectedRow == -1) {
+        JOptionPane.showMessageDialog(null, "Please select a student to delete.");
+        return;
+    }
+
+    DefaultTableModel model = (DefaultTableModel) StudentTable.getModel();
+    String studentNo = model.getValueAt(selectedRow, 1).toString(); // Student ID column
+
+    int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete this student?", "Confirm Deletion", JOptionPane.YES_NO_OPTION);
+
+    if (confirm != JOptionPane.YES_OPTION) {
+        return;
+    }
+
+    String url = "jdbc:mysql://localhost:3306/testdb";
+    String dbUsername = "root";
+    String dbPassword = "";
+
+    try (
+        Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+        PreparedStatement pst = conn.prepareStatement("DELETE FROM students WHERE StudentNo = ?")
+    ) {
+        pst.setString(1, studentNo);
+        int affectedRows = pst.executeUpdate();
+
+        if (affectedRows > 0) {
+            model.removeRow(selectedRow);
+            JOptionPane.showMessageDialog(null, "Student deleted successfully.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Failed to delete student.");
+        }
+
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+    }
+
+        
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+        new Signup().setVisible(true);
+        this.dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -228,14 +338,13 @@ public class admin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable Students;
+    private javax.swing.JTable StudentTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

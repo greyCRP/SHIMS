@@ -5,13 +5,13 @@
 package shimsystem;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import java.sql.SQLException;
+import java.sql.Connection;
 /**
  *
  * @author dell
