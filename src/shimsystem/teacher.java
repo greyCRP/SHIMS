@@ -80,6 +80,7 @@ public class teacher extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         BG = new javax.swing.JLabel();
+        panel1 = new java.awt.Panel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -250,6 +251,7 @@ public class teacher extends javax.swing.JFrame {
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, -1));
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 1640, 1020));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -317,6 +319,11 @@ gradec.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+
+
+
+
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -465,6 +472,7 @@ gradec.setVisible(true);
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField3;
+    private java.awt.Panel panel1;
     private javax.swing.JTextField permax1;
     private javax.swing.JTextField permax2;
     private javax.swing.JTextField permax3;

@@ -55,6 +55,7 @@ public class NewLogin extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        showpass = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -125,6 +126,14 @@ public class NewLogin extends javax.swing.JFrame {
         });
         LoginLeft.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 88, 40));
 
+        showpass.setText("Show password");
+        showpass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showpassActionPerformed(evt);
+            }
+        });
+        LoginLeft.add(showpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+
         getContentPane().add(LoginLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 360, 540));
 
         pack();
@@ -186,6 +195,18 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void showpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showpassActionPerformed
+
+         if (showpass.isSelected()){
+            passField.setEchoChar((char)0);
+        }
+        else
+       passField.setEchoChar('*');
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_showpassActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -237,5 +258,6 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
     private javax.swing.JLabel jLabel8;
     private java.awt.Panel panel1;
     private javax.swing.JPasswordField passField;
+    private javax.swing.JCheckBox showpass;
     // End of variables declaration//GEN-END:variables
 }
