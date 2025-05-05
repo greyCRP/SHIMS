@@ -33,11 +33,17 @@ public class admin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        panel2 = new java.awt.Panel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        teacher = new javax.swing.JScrollPane();
+        TeacherTable = new javax.swing.JTable();
         panel1 = new java.awt.Panel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        student = new javax.swing.JScrollPane();
         StudentTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -52,6 +58,64 @@ public class admin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panel2.setVisible(false);
+        panel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton6.setBackground(new java.awt.Color(0, 204, 204));
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("SHOW");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        panel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 150, 50));
+
+        jButton7.setBackground(new java.awt.Color(0, 153, 0));
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Add");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        panel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 560, 150, 50));
+
+        jButton8.setBackground(new java.awt.Color(204, 0, 0));
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Remove");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        panel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 150, 50));
+
+        TeacherTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Teacher Name", "Teacher ID", "Teacher Pasword", "Teacher Gmail"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        teacher.setViewportView(TeacherTable);
+
+        panel2.add(teacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
+
+        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
 
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -104,9 +168,9 @@ public class admin extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(StudentTable);
+        student.setViewportView(StudentTable);
 
-        panel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
+        panel1.add(student, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
 
         getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
 
@@ -128,6 +192,11 @@ public class admin extends javax.swing.JFrame {
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 0, -1, 50));
 
         jButton4.setText("Teacher management");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 260, 60));
 
         jButton5.setText("Student management");
@@ -191,6 +260,9 @@ public class admin extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
+        panel1.setVisible(true);
+        panel2.setVisible(false);
+        
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -210,7 +282,8 @@ public class admin extends javax.swing.JFrame {
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
 
 
-         
+         new student().setVisible(true);
+         this.dispose();
 
 
         // TODO add your handling code here:
@@ -302,6 +375,96 @@ public class admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+
+
+         DefaultTableModel model = (DefaultTableModel) TeacherTable.getModel(); // or studentTable if that's the correct name
+    model.setRowCount(0); // Clear existing rows
+     String url = "jdbc:mysql://localhost:3306/testdb";
+    String dbUsername = "root";
+    String dbPassword = "";
+
+try (
+    Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+    PreparedStatement pst = conn.prepareStatement("SELECT user, id, email, password FROM teacher");
+    ResultSet rs = pst.executeQuery()
+) {
+    while (rs.next()) {
+        String username = rs.getString("user");
+        String teacherId = rs.getString("id");
+        String email = rs.getString("email");
+        String password = rs.getString("password");
+
+        model.addRow(new Object[]{username, teacherId, email, password});
+    }
+} catch (Exception e) {
+    JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+}
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+
+          new Signup().setVisible(true);
+        this.dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+
+
+         int selectedRow = TeacherTable.getSelectedRow(); // or studentTable
+
+    if (selectedRow == -1) {
+        JOptionPane.showMessageDialog(null, "Please select a Account to delete.");
+        return;
+    }
+
+    DefaultTableModel model = (DefaultTableModel) TeacherTable.getModel();
+    String studentNo = model.getValueAt(selectedRow, 1).toString(); // Student ID column
+
+    int confirm = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete this Account?", "Confirm Deletion", JOptionPane.YES_NO_OPTION);
+
+    if (confirm != JOptionPane.YES_OPTION) {
+        return;
+    }
+
+    String url = "jdbc:mysql://localhost:3306/testdb";
+    String dbUsername = "root";
+    String dbPassword = "";
+
+    try (
+        Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+        PreparedStatement pst = conn.prepareStatement("DELETE FROM teacher WHERE id = ?")
+    ) {
+        pst.setString(1, studentNo);
+        int affectedRows = pst.executeUpdate();
+
+        if (affectedRows > 0) {
+            model.removeRow(selectedRow);
+            JOptionPane.showMessageDialog(null, "account deleted successfully.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Failed to delete account.");
+        }
+
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+    }
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+        panel1.setVisible(false);
+        panel2.setVisible(true);
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -339,11 +502,15 @@ public class admin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable StudentTable;
+    private javax.swing.JTable TeacherTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -352,7 +519,9 @@ public class admin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
     private java.awt.Panel panel1;
+    private java.awt.Panel panel2;
+    private javax.swing.JScrollPane student;
+    private javax.swing.JScrollPane teacher;
     // End of variables declaration//GEN-END:variables
 }

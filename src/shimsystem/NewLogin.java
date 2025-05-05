@@ -4,17 +4,21 @@
  */
 package shimsystem;
 
-import com.sun.jdi.connect.spi.Connection;
+import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import java.sql.SQLException;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 /**
 ;
 
@@ -56,6 +60,7 @@ public class NewLogin extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         showpass = new javax.swing.JCheckBox();
+        roleBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -100,7 +105,7 @@ public class NewLogin extends javax.swing.JFrame {
         LoginLeft.add(passField, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 205, 300, 36));
 
         jLabel3.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
-        jLabel3.setText("STUDENT I.D");
+        jLabel3.setText("I.D Number");
         LoginLeft.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 82, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
@@ -132,7 +137,10 @@ public class NewLogin extends javax.swing.JFrame {
                 showpassActionPerformed(evt);
             }
         });
-        LoginLeft.add(showpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        LoginLeft.add(showpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+
+        roleBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Teacher", "Student" }));
+        LoginLeft.add(roleBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, -1));
 
         getContentPane().add(LoginLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 360, 540));
 
@@ -148,64 +156,79 @@ public class NewLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-  String url = "jdbc:mysql://localhost:3306/testdb";
-String user = "root";
-String password = "";
+jButton2.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+        String inputId = idField.getText().trim();
+        String inputPass = new String(passField.getPassword()).trim();
 
-// Validate inputs first
-String studentNo = idField.getText().trim();
-String pass = new String(passField.getPassword()).trim();
+        if (inputId.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please enter your ID.");
+            return;
+        }
 
-if (studentNo.isEmpty()) {
-    JOptionPane.showMessageDialog(null, "Please fill out Student Number");
-    return;
-}
+        if (inputPass.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please enter your password.");
+            return;
+        }
 
-if (pass.isEmpty()) {
-    JOptionPane.showMessageDialog(null, "Please fill out Password");
-    return;
-}
+        // Check for fixed admin credentials
+        if (inputId.equals("admin") && inputPass.equals("admin")) {
+            JOptionPane.showMessageDialog(null, "Admin login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+            new admin().setVisible(true);
+            ((JFrame) SwingUtilities.getWindowAncestor((Component) e.getSource())).dispose();
+            return;
+        }
 
-// Secure query
-String loginQuery = "SELECT * FROM students WHERE StudentNo = ? AND Password = ?";
+        // Proceed with database authentication for Student or Teacher
+        String selectedRole = String.valueOf(roleBox.getSelectedItem());
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String dbUser = "root";
+        String dbPassword = "";
 
-try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)) {
-    System.out.println("Connected to the database!");
+        try (Connection conn = DriverManager.getConnection(url, dbUser, dbPassword)) {
+            String query;
+            PreparedStatement stmt;
 
-    PreparedStatement loginStmt = conn.prepareStatement(loginQuery);
-    loginStmt.setString(1, studentNo);
-    loginStmt.setString(2, pass);
+            if ("Student".equalsIgnoreCase(selectedRole)) {
+                query = "SELECT * FROM students WHERE StudentNo = ? AND Password = ?";
+                stmt = conn.prepareStatement(query);
+                stmt.setString(1, inputId);
+                stmt.setString(2, inputPass);
+            } else if ("Teacher".equalsIgnoreCase(selectedRole)) {
+                query = "SELECT * FROM teacher WHERE id = ? AND password = ?";
+                stmt = conn.prepareStatement(query);
+                stmt.setString(1, inputId);
+                stmt.setString(2, inputPass);
+            } else {
+                JOptionPane.showMessageDialog(null, "Please select a valid role.");
+                return;
+            }
 
-    ResultSet resultSet = loginStmt.executeQuery();
+            ResultSet rs = stmt.executeQuery();
 
-    if (resultSet.next()) { // If record exists
-        JOptionPane.showMessageDialog(null, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-       new student().setVisible(true);
-       this.dispose();
-    } 
-    
-    else if(studentNo.equals("admin") && pass.equals("admin"))
-    {
-        JOptionPane.showMessageDialog(null, "Admin login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-    new admin().setVisible(true);  // Replace with your actual admin panel class
-    this.dispose(); // Close current login form
+            if (rs.next()) {
+                JOptionPane.showMessageDialog(null, selectedRole + " login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                if ("Student".equalsIgnoreCase(selectedRole)) {
+                    new student().setVisible(true);
+                } else {
+                    new teacher().setVisible(true);
+                }
+                ((JFrame) SwingUtilities.getWindowAncestor((Component) e.getSource())).dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid ID or Password", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
+            rs.close();
+            stmt.close();
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Database error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
-  
-    
- 
-    
-    
-    else  {
-        JOptionPane.showMessageDialog(null, "Invalid Student Number or Password", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-    
-    
-    
-} catch (SQLException e) {
-    System.err.println("SQL Error: " + e.getMessage());
-    JOptionPane.showMessageDialog(null, "Database error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-}
-       
+});
+
+
+
 
 
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -273,6 +296,7 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
     private javax.swing.JLabel jLabel8;
     private java.awt.Panel panel1;
     private javax.swing.JPasswordField passField;
+    private javax.swing.JComboBox<String> roleBox;
     private javax.swing.JCheckBox showpass;
     // End of variables declaration//GEN-END:variables
 }

@@ -50,7 +50,7 @@ public class Signup extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         emailField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        roleBox = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -110,7 +110,7 @@ public class Signup extends javax.swing.JFrame {
         LoginLeft.add(idField, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 178, 320, 34));
 
         jLabel5.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
-        jLabel5.setText("Student Number");
+        jLabel5.setText("I.D Number");
         LoginLeft.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 150, -1, -1));
 
         emailField.addActionListener(new java.awt.event.ActionListener() {
@@ -124,8 +124,8 @@ public class Signup extends javax.swing.JFrame {
         jLabel6.setText("Gmail account");
         LoginLeft.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 230, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Student", "Teacher" }));
-        LoginLeft.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 80, -1));
+        roleBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Student", "Teacher" }));
+        LoginLeft.add(roleBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 80, -1));
 
         getContentPane().add(LoginLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 390, 540));
 
@@ -163,48 +163,71 @@ public class Signup extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+String name = nameField.getText().trim();
+String id = idField.getText().trim();
+String email = emailField.getText().trim();
+String pass = new String(passField.getPassword()).trim();
+String selectedRole = (String) roleBox.getSelectedItem();  // Get selected role (Student or Teacher)
 
-String url = "jdbc:mysql://localhost:3306/testdb";
-String user = "root";
-String password = "";
+if (name.isEmpty() || id.isEmpty() || email.isEmpty() || pass.isEmpty()) {
+    JOptionPane.showMessageDialog(null, "All fields are required!", "Validation Error", JOptionPane.WARNING_MESSAGE);
+    return;
+}
 
-// Ensure both queries use correct table and column names
-String insertQuery = "INSERT INTO students (FullName, StudentNo, Gmail, Password) VALUES (?, ?, ?, ?)";
+// Define the table name based on the selected role
+String tableName = selectedRole.equals("Student") ? "students" : "teacher";  // Table 'teacher' for teachers
+String dbUrl = "jdbc:mysql://localhost:3306/testdb";  // The same database for both roles
+String dbUser = "root";
+String dbPassword = "";
 
-String checkQuery = "SELECT COUNT(*) FROM students WHERE StudentNo = ? OR Gmail = ?";
+// Prepare SQL queries based on the selected role and table
+String insertQuery;
+String checkQuery;
 
-try (Connection conn = DriverManager.getConnection(url, user, password)) {
-    System.out.println("Connected to the database!");
+if (selectedRole.equals("Student")) {
+    insertQuery = "INSERT INTO " + tableName + " (FullName, StudentNo, Gmail, Password) VALUES (?, ?, ?, ?)";
+    checkQuery = "SELECT COUNT(*) FROM " + tableName + " WHERE StudentNo = ? OR Gmail = ?";
+} else {
+    // Teacher-specific queries
+    insertQuery = "INSERT INTO " + tableName + " (user, id, email, password) VALUES (?, ?, ?, ?)";
+    checkQuery = "SELECT COUNT(*) FROM " + tableName + " WHERE id = ? OR email = ?";
+}
 
-    // Check if user exists
+try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
+    // Check if the user already exists in the chosen table
     PreparedStatement checkStmt = conn.prepareStatement(checkQuery);
-    checkStmt.setString(1, idField.getText().trim());
-    checkStmt.setString(2, emailField.getText().trim());
+    checkStmt.setString(1, id);
+    checkStmt.setString(2, email);
     ResultSet checkResult = checkStmt.executeQuery();
     checkResult.next();
 
     if (checkResult.getInt(1) > 0) {
-        JOptionPane.showMessageDialog(null, "User or Gmail already registered!", "Error", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, selectedRole + " ID or Email already registered!", "Error", JOptionPane.ERROR_MESSAGE);
     } else {
-        // Insert new user
+        // Insert the new user into the chosen table
         PreparedStatement insertStmt = conn.prepareStatement(insertQuery);
-        insertStmt.setString(1, nameField.getText().trim());
-        insertStmt.setString(2, idField.getText().trim());
-        insertStmt.setString(3, emailField.getText().trim());
-        insertStmt.setString(4, new String(passField.getPassword()).trim());
+        insertStmt.setString(1, name);
+        insertStmt.setString(2, id);
+        insertStmt.setString(3, email);
+        insertStmt.setString(4, pass);  // Optionally hash this password
 
         int rowsInserted = insertStmt.executeUpdate();
         if (rowsInserted > 0) {
-            JOptionPane.showMessageDialog(null, "Successfully Registered", "Success", JOptionPane.INFORMATION_MESSAGE);
-            
-            this.dispose();
-            new NewLogin().setVisible(true);
+            JOptionPane.showMessageDialog(null, selectedRole + " Successfully Registered!", "Success", JOptionPane.INFORMATION_MESSAGE);
+
+            // Check the selected role and open the corresponding panel
+            if (selectedRole.equals("Student")) {
+                new student().setVisible(true); // Open the student panel
+            } else if (selectedRole.equals("Teacher")) {
+                new teacher().setVisible(true); // Open the teacher panel
+            }
+
+            this.dispose();  // Close the registration or login form
         }
     }
 
 } catch (SQLException e) {
-    
-    JOptionPane.showMessageDialog(null, "Please Fill up all Requirments: " + e.getMessage(), "Register Failed", JOptionPane.ERROR_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Database error: " + e.getMessage(), "Register Failed", JOptionPane.ERROR_MESSAGE);
 }
 
 
@@ -263,7 +286,6 @@ try (Connection conn = DriverManager.getConnection(url, user, password)) {
     private javax.swing.JTextField idField;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -282,5 +304,6 @@ try (Connection conn = DriverManager.getConnection(url, user, password)) {
     private javax.swing.JTextField nameField;
     private java.awt.Panel panel1;
     private javax.swing.JPasswordField passField;
+    private javax.swing.JComboBox<String> roleBox;
     // End of variables declaration//GEN-END:variables
 }
