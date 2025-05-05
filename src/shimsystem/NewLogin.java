@@ -180,11 +180,26 @@ try (java.sql.Connection conn = DriverManager.getConnection(url, user, password)
 
     if (resultSet.next()) { // If record exists
         JOptionPane.showMessageDialog(null, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-       
+       new student().setVisible(true);
+       this.dispose();
     } 
+    
+    else if(studentNo.equals("admin") && pass.equals("admin"))
+    {
+        JOptionPane.showMessageDialog(null, "Admin login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+    new admin().setVisible(true);  // Replace with your actual admin panel class
+    this.dispose(); // Close current login form
+    }
+  
+    
+ 
+    
+    
     else  {
         JOptionPane.showMessageDialog(null, "Invalid Student Number or Password", "Error", JOptionPane.ERROR_MESSAGE);
     }
+    
+    
     
 } catch (SQLException e) {
     System.err.println("SQL Error: " + e.getMessage());
