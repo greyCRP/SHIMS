@@ -41,9 +41,7 @@ public class teacher extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        gradec = new java.awt.Panel();
         panel1 = new java.awt.Panel();
         LoadStudent = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -87,14 +85,6 @@ public class teacher extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 250, 60));
 
-        jButton4.setText("Grade Computer");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 250, 60));
-
         jButton5.setText("Students Profile");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,10 +92,6 @@ public class teacher extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 250, 60));
-
-        gradec.setVisible(false);
-        gradec.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(gradec, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 1650, 1040));
 
         panel1.setVisible(false);
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -160,56 +146,6 @@ public class teacher extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-gradec.setVisible(true);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
@@ -297,11 +233,9 @@ gradec.setVisible(true);
     private javax.swing.JLabel BG;
     private javax.swing.JButton LoadStudent;
     private javax.swing.JTable StudentTable;
-    private java.awt.Panel gradec;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;

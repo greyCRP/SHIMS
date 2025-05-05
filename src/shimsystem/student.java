@@ -118,6 +118,7 @@ public class student extends javax.swing.JFrame {
         jLabel220 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
+        Activity = new java.awt.Panel();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -167,6 +168,11 @@ public class student extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 250, 60));
 
         jButton5.setText("Activities");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 250, 60));
 
         Grade.setBackground(new java.awt.Color(255, 255, 255));
@@ -469,6 +475,10 @@ public class student extends javax.swing.JFrame {
 
         getContentPane().add(Grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 1590, 950));
 
+        Activity.setBackground(new java.awt.Color(255, 255, 255));
+        Activity.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(Activity, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 1590, 950));
+
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -100, 2180, 1380));
 
@@ -760,6 +770,15 @@ try {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+
+
+        Activity.setVisible(true);
+        
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -797,6 +816,7 @@ try {
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Panel Activity;
     private javax.swing.JLabel BG;
     private java.awt.Panel College;
     private java.awt.Panel Grade;
