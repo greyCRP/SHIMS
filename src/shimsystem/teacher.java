@@ -47,6 +47,10 @@ public class teacher extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         StudentTable = new javax.swing.JTable();
         BG = new javax.swing.JLabel();
+        panel2 = new java.awt.Panel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        BG1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -132,6 +136,29 @@ public class teacher extends javax.swing.JFrame {
 
         getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 1640, 1020));
 
+        panel2.setVisible(false);
+        panel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Grade & Section", "Time", "Room"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        panel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1640, 530));
+
+        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 1640, 1020));
+
+        BG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        getContentPane().add(BG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1930, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -144,14 +171,17 @@ public class teacher extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+panel1.setVisible(false);
+panel2.setVisible(true);
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
 
 
-        
+        panel1.setVisible(true);
         
         
 
@@ -231,6 +261,7 @@ public class teacher extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BG;
+    private javax.swing.JLabel BG1;
     private javax.swing.JButton LoadStudent;
     private javax.swing.JTable StudentTable;
     private javax.swing.JButton jButton1;
@@ -241,6 +272,9 @@ public class teacher extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     private java.awt.Panel panel1;
+    private java.awt.Panel panel2;
     // End of variables declaration//GEN-END:variables
 }
