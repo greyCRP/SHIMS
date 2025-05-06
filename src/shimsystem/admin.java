@@ -5,6 +5,12 @@
 package shimsystem;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -12,13 +18,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.DefaultCellEditor;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 
 /**
  *
@@ -61,13 +74,10 @@ public class admin extends javax.swing.JFrame {
         panel3 = new java.awt.Panel();
         jScrollPane1 = new javax.swing.JScrollPane();
         sched = new javax.swing.JTable();
-        jButton12 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         show = new javax.swing.JButton();
         saves = new javax.swing.JButton();
         remove = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -76,6 +86,7 @@ public class admin extends javax.swing.JFrame {
         ttId = new javax.swing.JTextField();
         ggrade = new javax.swing.JTextField();
         rroom = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
@@ -208,7 +219,6 @@ public class admin extends javax.swing.JFrame {
 
         getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
 
-        jPanel1.setVisible(false);
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton9.setText("Teacher Schedule Management");
@@ -217,7 +227,7 @@ public class admin extends javax.swing.JFrame {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 210, 60));
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 210, 60));
 
         jButton10.setText("List of Teacher Accounts");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -225,12 +235,12 @@ public class admin extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 210, 60));
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 210, 60));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 130));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 920, 650));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, 600, 130));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 910, 580));
 
         panel3.setVisible(false);
         panel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -250,15 +260,6 @@ public class admin extends javax.swing.JFrame {
 
         panel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 360));
 
-        jButton12.setText("Search");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-        panel3.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, -1, -1));
-        panel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 390, 140, -1));
-
         jLabel10.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
         jLabel10.setText("Room");
         panel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, -1, -1));
@@ -269,7 +270,7 @@ public class admin extends javax.swing.JFrame {
                 showActionPerformed(evt);
             }
         });
-        panel3.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 540, 150, 50));
+        panel3.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, 150, 50));
 
         saves.setText("SAVE");
         saves.setActionCommand("saves");
@@ -286,10 +287,7 @@ public class admin extends javax.swing.JFrame {
                 removeActionPerformed(evt);
             }
         });
-        panel3.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 470, 150, 50));
-
-        jLabel11.setText("Teacher ID search");
-        panel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 370, -1, -1));
+        panel3.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 150, 50));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jLabel12.setText("Input Required Data to Save");
@@ -312,6 +310,9 @@ public class admin extends javax.swing.JFrame {
         panel3.add(rroom, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 540, 120, 30));
 
         getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 450.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -336,7 +337,7 @@ public class admin extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 260, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 260, 60));
 
         jButton5.setText("Student management");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -344,7 +345,7 @@ public class admin extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 260, 60));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 260, 60));
 
         jButton11.setText("Close Panel");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -628,10 +629,6 @@ try (
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
-
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
 
         panel3.setVisible(true);
@@ -642,43 +639,54 @@ try (
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void savesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savesActionPerformed
-    // Initialize variables
-Object grade = "Grade 11";   // For example, could be dynamically set
-int room = 101;              // Example room number
-int teacherId = 123;         // Example teacher ID
-Object time = "8:00 AM";     // Example time
+  
+    // Read input from JTextFields
+    String teacherIdText = ttId.getText().trim();
+    String grade = ggrade.getText().trim();
+    String time = ttime.getText().trim();
+    String roomText = rroom.getText().trim();
 
-// Ensure that the inputs are valid
-if (teacherId == 0 || grade == null || time == null || room == 0) {
-    JOptionPane.showMessageDialog(null, "Invalid input values! Ensure all fields are filled correctly.");
-    return; // Exit if validation fails
-}
-
-String url = "jdbc:mysql://localhost:3306/testdb"; // DB URL
-String user = "root";  // DB username
-String pass = "";      // DB password
-
-try (Connection conn = DriverManager.getConnection(url, user, pass)) {
-    // SQL Insert query
-    String sql = "INSERT INTO tl (teacherId, grade, time, room) VALUES (?, ?, ?, ?)";
-    try (PreparedStatement pst = conn.prepareStatement(sql)) {
-        // Set parameters for the SQL query
-        pst.setInt(1, teacherId);                 // Setting teacherId
-        pst.setString(2, (String) grade);         // Setting grade (make sure it's a String)
-        pst.setString(3, (String) time);          // Setting time (make sure it's a String)
-        pst.setInt(4, room);                      // Setting room number
-
-        // Execute the insert operation
-        int rowsInserted = pst.executeUpdate();
-        if (rowsInserted > 0) {
-            JOptionPane.showMessageDialog(null, "Recorded successfully!");
-        } else {
-            JOptionPane.showMessageDialog(null, "Insert failed.");
-        }
+    // Validate inputs
+    if (teacherIdText.isEmpty() || grade.isEmpty() || time.isEmpty() || roomText.isEmpty()) {
+        JOptionPane.showMessageDialog(null, "Please fill out all fields!");
+        return;
     }
-} catch (SQLException e) {
-    JOptionPane.showMessageDialog(null, "SQL Error: " + e.getMessage());
-}
+
+    int teacherId;
+    int room;
+
+    try {
+        teacherId = Integer.parseInt(teacherIdText);
+        room = Integer.parseInt(roomText);
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(null, "Teacher ID and Room must be valid numbers.");
+        return;
+    }
+
+    String url = "jdbc:mysql://localhost:3306/testdb";
+    String user = "root";
+    String pass = "";
+
+    try (Connection conn = DriverManager.getConnection(url, user, pass)) {
+        String sql = "INSERT INTO tl (teacherId, grade, time, room) VALUES (?, ?, ?, ?)";
+        try (PreparedStatement pst = conn.prepareStatement(sql)) {
+            pst.setInt(1, teacherId);
+            pst.setString(2, grade);
+            pst.setString(3, time);
+            pst.setInt(4, room);
+
+            int rowsInserted = pst.executeUpdate();
+            if (rowsInserted > 0) {
+                JOptionPane.showMessageDialog(null, "Recorded successfully!");
+            } else {
+                JOptionPane.showMessageDialog(null, "Insert failed.");
+            }
+        }
+    } catch (SQLException e) {
+        JOptionPane.showMessageDialog(null, "SQL Error: " + e.getMessage());
+    }
+
+
 
 
 
@@ -688,94 +696,135 @@ try (Connection conn = DriverManager.getConnection(url, user, pass)) {
 
     private void removeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeActionPerformed
 
+ 
+ 
+        // Set up the JFrame
+        JFrame frame = new JFrame("Teacher Schedule");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600, 400); // Set the overall size of the JFrame
+
+        // Create a JPanel to hold the JTable and Delete button, with a fixed size
+        JPanel panel = new JPanel();
+        panel.setLayout(new BorderLayout()); // BorderLayout for JTable and button
+
+        // Create the JTable with a DefaultTableModel
+        JTable sched = new JTable();
+        DefaultTableModel model = new DefaultTableModel();
+        model.setColumnIdentifiers(new Object[]{"Teacher ID", "Grade", "Time", "Room"});
+        sched.setModel(model);
+
+        // Load existing schedule data into the table (assuming you have a method for that)
+        loadScheduleData(model);
+
+        // Add JScrollPane for the JTable
+        JScrollPane scrollPane = new JScrollPane(sched);
+        panel.add(scrollPane, BorderLayout.CENTER);
+
+        // Create the Delete button
+        JButton deleteButton = new JButton("Delete Selected Row");
+        deleteButton.addActionListener(e -> {
+            // Get the selected row in the JTable
+            int selectedRow = sched.getSelectedRow();
+
+            // Check if a row is selected, otherwise show a message
+            if (selectedRow == -1) {
+                JOptionPane.showMessageDialog(null, "Please select a row to delete.");
+                return;
+            }
+
+            // Get the model of the table and retrieve the teacherId from the selected row (column 0)
+            DefaultTableModel tableModel = (DefaultTableModel) sched.getModel();
+            int teacherId = (Integer) tableModel.getValueAt(selectedRow, 0); // Assuming teacherId is in the first column
+
+            // Show confirmation dialog before deleting
+            int confirm = JOptionPane.showConfirmDialog(null,
+                    "Are you sure you want to delete this schedule for Teacher ID: " + teacherId + "?",
+                    "Confirm Deletion", JOptionPane.YES_NO_OPTION);
+
+            // Proceed if user confirms deletion
+            if (confirm == JOptionPane.YES_OPTION) {
+                // Database connection details
+                String url = "jdbc:mysql://localhost:3306/testdb";
+                String dbUsername = "root";
+                String dbPassword = "";
+
+                try (
+                    // Establish connection to the database
+                    Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+                    PreparedStatement pst = conn.prepareStatement("DELETE FROM tl WHERE teacherId = ?")
+                ) {
+                    // Set the teacherId parameter for the SQL query
+                    pst.setInt(1, teacherId);
+
+                    // Execute the SQL delete query
+                    int affectedRows = pst.executeUpdate();
+
+                    // If rows are deleted from the database, also remove the row from JTable
+                    if (affectedRows > 0) {
+                        // Remove the row from JTable's model
+                        tableModel.removeRow(selectedRow); // Remove the row from JTable
+
+                        // Show success message
+                        JOptionPane.showMessageDialog(null, "Schedule deleted successfully.");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Failed to delete schedule. No matching record found.");
+                    }
+                } catch (SQLException ex) {
+                    // Show error if database operation fails
+                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
+                }
+            }
+        });
+
+        // Add the Delete button to the bottom of the panel
+        panel.add(deleteButton, BorderLayout.SOUTH);
+
+        // Set the preferred size for the panel (Fixed size)
+        panel.setPreferredSize(new Dimension(500, 300)); // Set fixed size for the panel
+
+        // Center the panel in the frame
+        frame.setLayout(new GridBagLayout()); // Use GridBagLayout to center components
+        frame.add(panel);
+
+        // Show the frame
+        frame.setVisible(true);
+    }
+
+    // Load schedule data into the model (for example)
+    private static void loadScheduleData(DefaultTableModel model) {
+        // Database connection details
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String dbUsername = "root";
+        String dbPassword = "";
+
+        // Query to get all records from the 'tl' table
+        String query = "SELECT * FROM tl";
+
+        // Try-with-resources to manage the database resources
+        try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+             PreparedStatement pst = conn.prepareStatement(query);
+             ResultSet rs = pst.executeQuery()) {
+
+            // Loop through the result set and add each row to the table model
+            while (rs.next()) {
+                model.addRow(new Object[] {
+                    rs.getInt("teacherId"),   // Assuming the column name is 'teacherId'
+                    rs.getString("grade"),    // Assuming the column name is 'grade'
+                    rs.getString("time"),     // Assuming the column name is 'time'
+                    rs.getString("room")      // Assuming the column name is 'room'
+                });
+            }
+        } catch (SQLException ex) {
+            // Show an error message if there's an issue with the query or connection
+            JOptionPane.showMessageDialog(null, "Error loading schedule data: " + ex.getMessage());
+        }
+    
 
        
-    JTable sched = new JTable();
-    DefaultTableModel model = new DefaultTableModel();
-    model.setColumnIdentifiers(new Object[]{"Teacher ID", "Grade", "Time", "Room"});
-    sched.setModel(model);
-
-    // Load existing schedule from the database
-    loadScheduleData(model);
-
-    // Create a Remove button
-    JButton removeButton = new JButton("Remove Selected Row");
-    removeButton.addActionListener(e -> {
-        int selectedRow = sched.getSelectedRow();
-        if (selectedRow != -1) {
-            int teacherId = (Integer) model.getValueAt(selectedRow, 0);
-            int confirm = JOptionPane.showConfirmDialog(null, "Delete selected schedule?", "Confirm", JOptionPane.YES_NO_OPTION);
-            if (confirm == JOptionPane.YES_OPTION) {
-                model.removeRow(selectedRow);
-                remove(teacherId);
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Please select a row to remove.");
-        }
-    });
-
-    // Use a JPanel with BorderLayout to stack table and button
-    JPanel panel = new JPanel(new BorderLayout());
-    panel.add(new JScrollPane(sched), BorderLayout.CENTER);
-    panel.add(removeButton, BorderLayout.SOUTH);
-
-    // Show the modal dialog (replaces JFrame)
-    JOptionPane.showConfirmDialog(null, panel, "Teacher Schedule", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE);
-}
-
-// Method to load data from database
-public void loadScheduleData(DefaultTableModel model) {
-    String url = "jdbc:mysql://localhost:3306/testdb";
-    String user = "root";
-    String pass = "";
-
-    try (Connection conn = DriverManager.getConnection(url, user, pass)) {
-        String query = "SELECT * FROM tl";
-        try (PreparedStatement stmt = conn.prepareStatement(query);
-             ResultSet rs = stmt.executeQuery()) {
-
-            while (rs.next()) {
-                int teacherId = rs.getInt("teacherId");
-                String grade = rs.getString("grade");
-                String time = rs.getString("time");
-                int room = rs.getInt("room");
-
-                model.addRow(new Object[]{teacherId, grade, time, room});
-            }
-        }
-    } catch (SQLException e) {
-        JOptionPane.showMessageDialog(null, "Error loading data: " + e.getMessage());
-    }
-}
-
-// Method to remove data from the database
-    @Override
-    public void remove(int teacherId) {
-    String url = "jdbc:mysql://localhost:3306/testdb";
-    String user = "root";
-    String pass = "";
-
-    try (Connection conn = DriverManager.getConnection(url, user, pass)) {
-        String query = "DELETE FROM tl WHERE teacherId = ?";
-        try (PreparedStatement stmt = conn.prepareStatement(query)) {
-            stmt.setInt(1, teacherId);
-            int affectedRows = stmt.executeUpdate();
-            if (affectedRows > 0) {
-                JOptionPane.showMessageDialog(null, "Schedule deleted successfully.");
-            } else {
-                JOptionPane.showMessageDialog(null, "No schedule found for deletion.");
-            }
-        }
-    } catch (SQLException e) {
-        JOptionPane.showMessageDialog(null, "Error deleting data: " + e.getMessage());
-    }
-
-
-
-
 
 
     
+
 
 
         // TODO add your handling code here:
@@ -857,7 +906,6 @@ try (
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -883,7 +931,6 @@ try (
     private javax.swing.JLabel jLabel9;
     private java.awt.Panel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
     private java.awt.Panel panel1;
     private java.awt.Panel panel2;
     private java.awt.Panel panel3;

@@ -57,6 +57,7 @@ public class Enrollment extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -148,6 +149,9 @@ public class Enrollment extends javax.swing.JFrame {
         panel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 220, 50));
         panel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 220, 60));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 350.png"))); // NOI18N
+        panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
+
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
         panel1.add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 420));
 
@@ -225,6 +229,7 @@ public class Enrollment extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Apply;
     private javax.swing.JLabel BG;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
