@@ -22,7 +22,7 @@ public class student extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -128,9 +128,9 @@ public class student extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SHIMS | STUDENT");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -3, -1, 50));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 60));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home.png"))); // NOI18N
         jLabel9.setText("Logout");
@@ -140,24 +140,19 @@ public class student extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1810, 0, -1, 50));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1790, 0, -1, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Lapiz Lazuli.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 60));
 
-        jButton1.setText("Grade Computer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 250, 60));
+        jButton6.setText("Initial Grade Viewer");
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 250, 60));
 
         jButton2.setText("Lessons");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 250, 60));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 250, 60));
 
         jButton3.setText("Schedule");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 250, 60));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 250, 60));
 
         jButton4.setText("Enrollment");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +160,7 @@ public class student extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 250, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 250, 60));
 
         jButton5.setText("Activities");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +168,7 @@ public class student extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 250, 60));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 250, 60));
 
         Grade.setBackground(new java.awt.Color(255, 255, 255));
         Grade.setVisible(false);
@@ -494,13 +489,6 @@ public class student extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel9MouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     Grade.setVisible(true);
-
-
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void bt13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt13ActionPerformed
 try {
@@ -836,12 +824,12 @@ try {
     private javax.swing.JTextField f7;
     private javax.swing.JTextField f8;
     private javax.swing.JTextField f9;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;

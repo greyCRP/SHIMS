@@ -61,12 +61,19 @@ public class admin extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         teacher = new javax.swing.JScrollPane();
         TeacherTable = new javax.swing.JTable();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         panel1 = new java.awt.Panel();
+        jLabel25 = new javax.swing.JLabel();
+        Search1 = new javax.swing.JButton();
+        SearchT1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         student = new javax.swing.JScrollPane();
         StudentTable = new javax.swing.JTable();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
         jPanel1 = new java.awt.Panel();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
@@ -86,11 +93,16 @@ public class admin extends javax.swing.JFrame {
         ttId = new javax.swing.JTextField();
         ggrade = new javax.swing.JTextField();
         rroom = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        Search = new javax.swing.JButton();
+        SearchT = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -107,6 +119,7 @@ public class admin extends javax.swing.JFrame {
         panel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton6.setBackground(new java.awt.Color(0, 204, 204));
+        jButton6.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("SHOW");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -114,9 +127,10 @@ public class admin extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        panel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 150, 50));
+        panel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 220, 220, 70));
 
         jButton7.setBackground(new java.awt.Color(0, 153, 0));
+        jButton7.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Add");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -124,9 +138,10 @@ public class admin extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        panel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 560, 150, 50));
+        panel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 350, 220, 70));
 
         jButton8.setBackground(new java.awt.Color(204, 0, 0));
+        jButton8.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("Remove");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +149,7 @@ public class admin extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        panel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 150, 50));
+        panel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 480, 220, 70));
 
         TeacherTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -157,42 +172,80 @@ public class admin extends javax.swing.JFrame {
         });
         teacher.setViewportView(TeacherTable);
 
-        panel2.add(teacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
+        panel2.add(teacher, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1240, 910));
 
-        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
+        jLabel11.setFont(new java.awt.Font("Serif", 1, 40)); // NOI18N
+        jLabel11.setText("Teacher List");
+        panel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 70, -1, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        panel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1560, 920));
+
+        getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 1550, 910));
 
         panel1.setVisible(false);
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        jLabel25.setText("Input User ID to Search");
+        panel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 670, 210, 60));
+
+        Search1.setBackground(new java.awt.Color(0, 51, 204));
+        Search1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Search1.setForeground(new java.awt.Color(255, 255, 255));
+        Search1.setText("Search");
+        Search1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Search1ActionPerformed(evt);
+            }
+        });
+        panel1.add(Search1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 510, 260, 70));
+
+        SearchT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SearchT1ActionPerformed(evt);
+            }
+        });
+        panel1.add(SearchT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 620, 260, 60));
+
         jButton1.setBackground(new java.awt.Color(0, 204, 204));
+        jButton1.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("SHOW");
+        jButton1.setMaximumSize(new java.awt.Dimension(111, 39));
+        jButton1.setMinimumSize(new java.awt.Dimension(111, 39));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        panel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 150, 50));
+        panel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 180, 260, 70));
 
         jButton2.setBackground(new java.awt.Color(0, 153, 0));
+        jButton2.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Add");
+        jButton2.setMaximumSize(new java.awt.Dimension(111, 39));
+        jButton2.setMinimumSize(new java.awt.Dimension(111, 39));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        panel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 560, 150, 50));
+        panel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 400, 260, 70));
 
         jButton3.setBackground(new java.awt.Color(204, 0, 0));
+        jButton3.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Remove");
+        jButton3.setMaximumSize(new java.awt.Dimension(111, 39));
+        jButton3.setMinimumSize(new java.awt.Dimension(111, 39));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        panel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 560, 150, 50));
+        panel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 290, 260, 70));
 
         StudentTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -215,34 +268,48 @@ public class admin extends javax.swing.JFrame {
         });
         student.setViewportView(StudentTable);
 
-        panel1.add(student, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 550));
+        panel1.add(student, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 920));
 
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
+        jLabel22.setFont(new java.awt.Font("Serif", 0, 40)); // NOI18N
+        jLabel22.setText("Student List");
+        panel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 80, -1, -1));
 
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        panel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1560, 920));
+
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 1530, 920));
+
+        jPanel1.setVisible(false);
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton9.setBackground(new java.awt.Color(51, 51, 51));
+        jButton9.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Teacher Schedule Management");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 210, 60));
+        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 330, 110));
 
+        jButton10.setBackground(new java.awt.Color(51, 51, 51));
+        jButton10.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("List of Teacher Accounts");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 210, 60));
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 330, 110));
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 920, 650));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 440));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 910, 580));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 1020, 440));
 
-        panel3.setVisible(false);
         panel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         sched.setModel(new javax.swing.table.DefaultTableModel(
@@ -258,20 +325,26 @@ public class admin extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(sched);
 
-        panel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 360));
+        panel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1320, 550));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI Symbol", 0, 24)); // NOI18N
         jLabel10.setText("Room");
-        panel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 520, -1, -1));
+        panel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 700, -1, -1));
 
+        show.setBackground(new java.awt.Color(0, 204, 51));
+        show.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        show.setForeground(new java.awt.Color(255, 255, 255));
         show.setText("SHOW");
         show.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showActionPerformed(evt);
             }
         });
-        panel3.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 440, 150, 50));
+        panel3.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 80, 150, 50));
 
+        saves.setBackground(new java.awt.Color(0, 204, 0));
+        saves.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        saves.setForeground(new java.awt.Color(255, 255, 255));
         saves.setText("SAVE");
         saves.setActionCommand("saves");
         saves.addActionListener(new java.awt.event.ActionListener() {
@@ -279,47 +352,66 @@ public class admin extends javax.swing.JFrame {
                 savesActionPerformed(evt);
             }
         });
-        panel3.add(saves, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, 90, 30));
+        panel3.add(saves, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 740, 140, 50));
 
+        remove.setBackground(new java.awt.Color(204, 0, 0));
+        remove.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        remove.setForeground(new java.awt.Color(255, 255, 255));
         remove.setText("REMOVE");
         remove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removeActionPerformed(evt);
             }
         });
-        panel3.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 150, 50));
+        panel3.add(remove, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 200, 150, 50));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
         jLabel12.setText("Input Required Data to Save");
-        panel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
+        panel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Segoe UI Symbol", 0, 24)); // NOI18N
         jLabel13.setText("Teacher ID");
-        panel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
+        panel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 700, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Segoe UI Symbol", 0, 24)); // NOI18N
         jLabel14.setText("Grade and Section");
-        panel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, -1, -1));
+        panel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 700, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Segoe UI Symbol", 0, 24)); // NOI18N
         jLabel15.setText("Time");
-        panel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, -1, -1));
-        panel3.add(ttime, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 120, 30));
-        panel3.add(ttId, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 120, 30));
-        panel3.add(ggrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 120, 30));
-        panel3.add(rroom, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 540, 120, 30));
+        panel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 700, -1, -1));
+        panel3.add(ttime, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 740, 210, 50));
+        panel3.add(ttId, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 740, 210, 50));
+        panel3.add(ggrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 740, 210, 50));
+        panel3.add(rroom, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 740, 210, 50));
 
-        getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 870, 610));
+        Search.setBackground(new java.awt.Color(0, 51, 204));
+        Search.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Search.setForeground(new java.awt.Color(255, 255, 255));
+        Search.setText("Search");
+        Search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SearchActionPerformed(evt);
+            }
+        });
+        panel3.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 300, 150, 50));
+        panel3.add(SearchT, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 390, 180, 50));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 450.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, -1, -1));
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        jLabel24.setText("Input User ID to Search");
+        panel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 360, 190, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        panel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, 910));
+
+        getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 1520, 910));
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SHIMS | ADMIN");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 50));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 60));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home.png"))); // NOI18N
         jLabel9.setText("SHIMS");
@@ -329,38 +421,55 @@ public class admin extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 0, -1, 50));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 0, -1, 60));
 
-        jButton4.setText("Teacher management");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Grad pic.png"))); // NOI18N
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 260, 60));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 330, 380));
 
-        jButton5.setText("Student management");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+        jLabel20.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel20.setText("Student Management");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 427, -1, 50));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/titcher.png"))); // NOI18N
+        jLabel17.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 260, 60));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 340, 420));
 
+        jLabel18.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
+        jLabel18.setText("Teacher Management");
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 920, -1, 50));
+
+        jButton11.setBackground(new java.awt.Color(204, 0, 0));
+        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("Close Panel");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 700, 100, -1));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1690, 990, 190, 50));
 
-        jLabel4.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("|");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 0, 30, 50));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 0, 70, 60));
 
-        jLabel7.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("TEACHER PANEL");
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -368,9 +477,9 @@ public class admin extends javax.swing.JFrame {
                 jLabel7MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, -1, 50));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 0, 230, 60));
 
-        jLabel6.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("STUDENT PANEL");
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -378,10 +487,10 @@ public class admin extends javax.swing.JFrame {
                 jLabel6MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, -1, 50));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1487, 0, 220, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Lapiz Lazuli.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 60));
 
         jLabel5.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -389,7 +498,7 @@ public class admin extends javax.swing.JFrame {
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, -1, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1200, 690));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1920, 1030));
 
         pack();
         setLocationRelativeTo(null);
@@ -406,19 +515,10 @@ public class admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel9MouseClicked
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-
-        panel1.setVisible(true);
-        panel2.setVisible(false);
-        
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
 
 
-                        new teacher1().setVisible(true);
+                        new teacher().setVisible(true);
                         this.dispose();
 
         
@@ -430,7 +530,7 @@ public class admin extends javax.swing.JFrame {
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
 
 
-         new student1().setVisible(true);
+         new student().setVisible(true);
          this.dispose();
 
 
@@ -519,7 +619,7 @@ public class admin extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         new Signup().setVisible(true);
-        this.dispose();
+      
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -555,7 +655,7 @@ try (
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
 
           new Signup().setVisible(true);
-        this.dispose();
+   
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -602,16 +702,6 @@ try (
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-
-        panel1.setVisible(false);
-        jPanel1.setVisible(true);
-
-
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
 
@@ -698,127 +788,48 @@ try (
 
  
  
-        // Set up the JFrame
-        JFrame frame = new JFrame("Teacher Schedule");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400); // Set the overall size of the JFrame
+        int selectedRow = sched.getSelectedRow();  // sched is your JTable
 
-        // Create a JPanel to hold the JTable and Delete button, with a fixed size
-        JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout()); // BorderLayout for JTable and button
+if (selectedRow == -1) {
+    JOptionPane.showMessageDialog(null, "Please select a schedule to delete.");
+    return;
+}
 
-        // Create the JTable with a DefaultTableModel
-        JTable sched = new JTable();
-        DefaultTableModel model = new DefaultTableModel();
-        model.setColumnIdentifiers(new Object[]{"Teacher ID", "Grade", "Time", "Room"});
-        sched.setModel(model);
+DefaultTableModel model = (DefaultTableModel) sched.getModel();
+String teacherId = model.getValueAt(selectedRow, 0).toString(); // Assuming teacherId is in column 0
 
-        // Load existing schedule data into the table (assuming you have a method for that)
-        loadScheduleData(model);
+int confirm = JOptionPane.showConfirmDialog(
+        null,
+        "Are you sure you want to delete this schedule?",
+        "Confirm Deletion",
+        JOptionPane.YES_NO_OPTION
+);
 
-        // Add JScrollPane for the JTable
-        JScrollPane scrollPane = new JScrollPane(sched);
-        panel.add(scrollPane, BorderLayout.CENTER);
+if (confirm != JOptionPane.YES_OPTION) {
+    return;
+}
 
-        // Create the Delete button
-        JButton deleteButton = new JButton("Delete Selected Row");
-        deleteButton.addActionListener(e -> {
-            // Get the selected row in the JTable
-            int selectedRow = sched.getSelectedRow();
+String url = "jdbc:mysql://localhost:3306/testdb";
+String dbUsername = "root";
+String dbPassword = "";
 
-            // Check if a row is selected, otherwise show a message
-            if (selectedRow == -1) {
-                JOptionPane.showMessageDialog(null, "Please select a row to delete.");
-                return;
-            }
+try (
+    Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+    PreparedStatement pst = conn.prepareStatement("DELETE FROM tl WHERE teacherId = ?")
+) {
+    pst.setString(1, teacherId);
+    int affectedRows = pst.executeUpdate();
 
-            // Get the model of the table and retrieve the teacherId from the selected row (column 0)
-            DefaultTableModel tableModel = (DefaultTableModel) sched.getModel();
-            int teacherId = (Integer) tableModel.getValueAt(selectedRow, 0); // Assuming teacherId is in the first column
-
-            // Show confirmation dialog before deleting
-            int confirm = JOptionPane.showConfirmDialog(null,
-                    "Are you sure you want to delete this schedule for Teacher ID: " + teacherId + "?",
-                    "Confirm Deletion", JOptionPane.YES_NO_OPTION);
-
-            // Proceed if user confirms deletion
-            if (confirm == JOptionPane.YES_OPTION) {
-                // Database connection details
-                String url = "jdbc:mysql://localhost:3306/testdb";
-                String dbUsername = "root";
-                String dbPassword = "";
-
-                try (
-                    // Establish connection to the database
-                    Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
-                    PreparedStatement pst = conn.prepareStatement("DELETE FROM tl WHERE teacherId = ?")
-                ) {
-                    // Set the teacherId parameter for the SQL query
-                    pst.setInt(1, teacherId);
-
-                    // Execute the SQL delete query
-                    int affectedRows = pst.executeUpdate();
-
-                    // If rows are deleted from the database, also remove the row from JTable
-                    if (affectedRows > 0) {
-                        // Remove the row from JTable's model
-                        tableModel.removeRow(selectedRow); // Remove the row from JTable
-
-                        // Show success message
-                        JOptionPane.showMessageDialog(null, "Schedule deleted successfully.");
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Failed to delete schedule. No matching record found.");
-                    }
-                } catch (SQLException ex) {
-                    // Show error if database operation fails
-                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
-                }
-            }
-        });
-
-        // Add the Delete button to the bottom of the panel
-        panel.add(deleteButton, BorderLayout.SOUTH);
-
-        // Set the preferred size for the panel (Fixed size)
-        panel.setPreferredSize(new Dimension(500, 300)); // Set fixed size for the panel
-
-        // Center the panel in the frame
-        frame.setLayout(new GridBagLayout()); // Use GridBagLayout to center components
-        frame.add(panel);
-
-        // Show the frame
-        frame.setVisible(true);
+    if (affectedRows > 0) {
+        model.removeRow(selectedRow);
+        JOptionPane.showMessageDialog(null, "Schedule deleted successfully.");
+    } else {
+        JOptionPane.showMessageDialog(null, "Failed to delete schedule.");
     }
 
-    // Load schedule data into the model (for example)
-    private static void loadScheduleData(DefaultTableModel model) {
-        // Database connection details
-        String url = "jdbc:mysql://localhost:3306/testdb";
-        String dbUsername = "root";
-        String dbPassword = "";
-
-        // Query to get all records from the 'tl' table
-        String query = "SELECT * FROM tl";
-
-        // Try-with-resources to manage the database resources
-        try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
-             PreparedStatement pst = conn.prepareStatement(query);
-             ResultSet rs = pst.executeQuery()) {
-
-            // Loop through the result set and add each row to the table model
-            while (rs.next()) {
-                model.addRow(new Object[] {
-                    rs.getInt("teacherId"),   // Assuming the column name is 'teacherId'
-                    rs.getString("grade"),    // Assuming the column name is 'grade'
-                    rs.getString("time"),     // Assuming the column name is 'time'
-                    rs.getString("room")      // Assuming the column name is 'room'
-                });
-            }
-        } catch (SQLException ex) {
-            // Show an error message if there's an issue with the query or connection
-            JOptionPane.showMessageDialog(null, "Error loading schedule data: " + ex.getMessage());
-        }
-    
+} catch (Exception e) {
+    JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+}
 
        
 
@@ -864,6 +875,107 @@ try (
         // TODO add your handling code here:
     }//GEN-LAST:event_showActionPerformed
 
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+
+         
+        jPanel1.setVisible(true);
+        panel1.setVisible(false);
+        panel2.setVisible(false);
+        panel3.setVisible(false);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+
+      
+        
+           
+        panel1.setVisible(true);
+        panel2.setVisible(false); 
+        jPanel1.setVisible(false);
+     
+        panel3.setVisible(false);
+
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+
+        jPanel1.setVisible(false);
+        panel1.setVisible(true);
+        panel2.setVisible(false);
+        panel3.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
+
+        Search.addActionListener(e -> {
+            String teacherIdInput = SearchT.getText().trim();
+
+            if (teacherIdInput.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Please enter a Teacher ID to search.");
+                return;
+            }
+
+            DefaultTableModel model = (DefaultTableModel) sched.getModel();
+            boolean found = false;
+
+            // Loop through the table to find the matching Teacher ID
+            for (int i = 0; i < model.getRowCount(); i++) {
+                String teacherIdInTable = model.getValueAt(i, 0).toString(); // Assuming teacherId is in column 0
+
+                if (teacherIdInTable.equals(teacherIdInput)) {
+                    sched.setRowSelectionInterval(i, i); // Highlight the row
+                    sched.scrollRectToVisible(sched.getCellRect(i, 0, true)); // Scroll to the row if it's not visible
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                JOptionPane.showMessageDialog(null, "No schedule found for Teacher ID: " + teacherIdInput);
+            }
+        });
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchActionPerformed
+
+    private void Search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Search1ActionPerformed
+        String studentNoInput = SearchT1.getText().trim();
+
+        if (studentNoInput.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please enter a Student No to search.");
+            return;
+        }
+
+        DefaultTableModel model = (DefaultTableModel) StudentTable.getModel();
+        boolean found = false;
+
+        for (int i = 0; i < model.getRowCount(); i++) {
+            String studentNoInTable = model.getValueAt(i, 1).toString(); // Column index 1 = Student ID
+
+            if (studentNoInTable.equals(studentNoInput)) {
+                StudentTable.setRowSelectionInterval(i, i);
+                StudentTable.scrollRectToVisible(StudentTable.getCellRect(i, 0, true));
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            JOptionPane.showMessageDialog(null, "No student found with Student No: " + studentNoInput);
+        }
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Search1ActionPerformed
+
+    private void SearchT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchT1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -900,6 +1012,10 @@ try (
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Search;
+    private javax.swing.JButton Search1;
+    private javax.swing.JTextField SearchT;
+    private javax.swing.JTextField SearchT1;
     private javax.swing.JTable StudentTable;
     private javax.swing.JTable TeacherTable;
     private javax.swing.JTextField ggrade;
@@ -908,8 +1024,6 @@ try (
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -921,7 +1035,17 @@ try (
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

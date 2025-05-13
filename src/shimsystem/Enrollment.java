@@ -38,6 +38,7 @@ public class Enrollment extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         panel1 = new java.awt.Panel();
         Apply = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -57,8 +58,6 @@ public class Enrollment extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
-        jLabel1 = new javax.swing.JLabel();
-        BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -69,7 +68,7 @@ public class Enrollment extends javax.swing.JFrame {
         jLabel2.setText("SHIMS | ENROLLMENT");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 50));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home.png"))); // NOI18N
         jLabel9.setText("SHIMS");
@@ -79,10 +78,10 @@ public class Enrollment extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, -1, 50));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 0, -1, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Lapiz Lazuli.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 60));
 
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -93,6 +92,9 @@ public class Enrollment extends javax.swing.JFrame {
             }
         });
         panel1.add(Apply, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 130, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 350.png"))); // NOI18N
+        panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 30, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jLabel4.setText("Step 1");
@@ -149,13 +151,7 @@ public class Enrollment extends javax.swing.JFrame {
         panel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 220, 50));
         panel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 220, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 350.png"))); // NOI18N
-        panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
-
-        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        panel1.add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 420));
-
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 820, 420));
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1350, 750));
 
         pack();
         setLocationRelativeTo(null);
@@ -228,7 +224,6 @@ public class Enrollment extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Apply;
-    private javax.swing.JLabel BG;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

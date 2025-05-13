@@ -45,10 +45,11 @@ public class AboutUs extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         jLabel18 = new javax.swing.JLabel();
-        BG = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -57,9 +58,9 @@ public class AboutUs extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Serif", 1, 28)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("SHIMS | About CCST");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 50));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 60));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home.png"))); // NOI18N
         jLabel9.setText("SHIMS");
@@ -69,76 +70,85 @@ public class AboutUs extends javax.swing.JFrame {
                 jLabel9MouseClicked(evt);
             }
         });
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 0, -1, 50));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 0, -1, 60));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain Lapiz Lazuli.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 50));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 60));
 
+        panel1.setForeground(new java.awt.Color(255, 255, 255));
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         panel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, -1, 60));
 
-        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 48)); // NOI18N
         jLabel4.setText("Contact");
-        panel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 90, -1));
+        panel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 190, -1));
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 48)); // NOI18N
         jLabel5.setText("School Address");
-        panel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        panel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 48)); // NOI18N
         jLabel6.setText("Available Track and Courses");
-        panel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+        panel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 400, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 48)); // NOI18N
         jLabel7.setText("School ID");
-        panel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+        panel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel8.setText("GAS");
-        panel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+        panel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 630, 110, 40));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel10.setText(" 0968 565 1422");
-        panel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 130, -1));
+        panel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 250, -1));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        jLabel11.setText("401878 Clark College of Science and Technology");
-        panel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
+        jLabel11.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
+        jLabel11.setText("Science and Technology");
+        panel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel12.setText("TVL- ICT");
-        panel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
+        panel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 180, 40));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel13.setText("TVL- HE");
-        panel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
+        panel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 560, 170, 40));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel14.setText("ABM");
-        panel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, -1, -1));
+        panel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 630, 120, 40));
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel15.setText("STEM");
-        panel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, -1, -1));
+        panel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 550, 140, 40));
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
         jLabel16.setText("HUMSS");
-        panel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
+        panel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 470, 170, 40));
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        jLabel17.setText("SNS Building Aurea St. Samsonville Subd. 2010");
-        panel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
-        panel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 410, 20));
-        panel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 410, 30));
+        jLabel17.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
+        jLabel17.setText("SNS Building Aurea St.");
+        panel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+        panel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 410, 210));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/logo 350.png"))); // NOI18N
-        panel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, -1, -1));
+        panel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, -1, -1));
+        panel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 410, 20));
 
-        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
-        panel1.add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 450));
-        panel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 410, 20));
+        jLabel19.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
+        jLabel19.setText("401878 | Clark College of");
+        panel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
 
-        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1000, 430));
+        jLabel20.setFont(new java.awt.Font("Segoe UI Semibold", 0, 36)); // NOI18N
+        jLabel20.setText("Samsonville Subd. 2010");
+        panel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        jLabel21.setToolTipText("");
+        panel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 740));
+
+        getContentPane().add(panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1350, 740));
 
         pack();
         setLocationRelativeTo(null);
@@ -188,7 +198,6 @@ public class AboutUs extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BG;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -199,7 +208,10 @@ public class AboutUs extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -208,7 +220,6 @@ public class AboutUs extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private java.awt.Panel panel1;
     // End of variables declaration//GEN-END:variables

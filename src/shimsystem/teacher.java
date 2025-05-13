@@ -46,10 +46,23 @@ public class teacher extends javax.swing.JFrame {
         LoadStudent = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         StudentTable = new javax.swing.JTable();
+        jButton4 = new javax.swing.JButton();
+        Search1 = new javax.swing.JButton();
+        SearchT1 = new javax.swing.JTextField();
+        jLabel25 = new javax.swing.JLabel();
         BG = new javax.swing.JLabel();
         panel2 = new java.awt.Panel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        panel3 = new java.awt.Panel();
+        jLabel24 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        sched = new javax.swing.JTable();
+        show = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        Search = new javax.swing.JButton();
+        SearchT = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
         BG1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -76,6 +89,11 @@ public class teacher extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 50));
 
         jButton3.setText("Schedule");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 250, 60));
 
         jButton2.setText("Lessons");
@@ -100,13 +118,16 @@ public class teacher extends javax.swing.JFrame {
         panel1.setVisible(false);
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        LoadStudent.setBackground(new java.awt.Color(0, 204, 0));
+        LoadStudent.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+        LoadStudent.setForeground(new java.awt.Color(255, 255, 255));
         LoadStudent.setText("SHOW");
         LoadStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LoadStudentActionPerformed(evt);
             }
         });
-        panel1.add(LoadStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 900, 240, 70));
+        panel1.add(LoadStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 830, 220, 60));
 
         StudentTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -129,7 +150,34 @@ public class teacher extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(StudentTable);
 
-        panel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 1580, 800));
+        panel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 1580, 760));
+
+        jButton4.setBackground(new java.awt.Color(204, 0, 0));
+        jButton4.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Exit");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        panel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1430, 880, 170, 50));
+
+        Search1.setBackground(new java.awt.Color(0, 51, 204));
+        Search1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Search1.setForeground(new java.awt.Color(255, 255, 255));
+        Search1.setText("Search");
+        Search1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Search1ActionPerformed(evt);
+            }
+        });
+        panel1.add(Search1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 830, 220, 60));
+        panel1.add(SearchT1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 830, 260, 60));
+
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        jLabel25.setText("Input User ID to Search");
+        panel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 900, 190, -1));
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
         panel1.add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(-280, -50, -1, -1));
@@ -156,6 +204,67 @@ public class teacher extends javax.swing.JFrame {
 
         getContentPane().add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 1640, 1020));
 
+        panel3.setVisible(false);
+        panel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        jLabel24.setText("Input User ID to Search");
+        panel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 900, 190, -1));
+
+        sched.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Teacher ID", "Grade and Section", "Time", "Room"
+            }
+        ));
+        jScrollPane3.setViewportView(sched);
+
+        panel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 1500, 770));
+
+        show.setBackground(new java.awt.Color(0, 204, 51));
+        show.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        show.setForeground(new java.awt.Color(255, 255, 255));
+        show.setText("SHOW");
+        show.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showActionPerformed(evt);
+            }
+        });
+        panel3.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 830, 220, 60));
+
+        jButton6.setBackground(new java.awt.Color(204, 0, 0));
+        jButton6.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Exit");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        panel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 880, 170, 50));
+
+        Search.setBackground(new java.awt.Color(0, 51, 204));
+        Search.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Search.setForeground(new java.awt.Color(255, 255, 255));
+        Search.setText("Search");
+        Search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SearchActionPerformed(evt);
+            }
+        });
+        panel3.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 830, 220, 60));
+        panel3.add(SearchT, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 830, 260, 60));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
+        panel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, 990));
+
+        getContentPane().add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 1580, 990));
+
         BG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Plain White.jpg"))); // NOI18N
         getContentPane().add(BG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1930, -1));
 
@@ -172,7 +281,7 @@ public class teacher extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 panel1.setVisible(false);
-panel2.setVisible(true);
+panel3.setVisible(true);
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -224,6 +333,135 @@ panel2.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_LoadStudentActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+   
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void showActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_showActionPerformed
+
+        DefaultTableModel model = (DefaultTableModel) sched.getModel(); // or use your actual JTable name
+        model.setRowCount(0); // Clear existing rows
+
+        String url = "jdbc:mysql://localhost:3306/testdb";
+        String dbUsername = "root";
+        String dbPassword = "";
+
+        try (
+            Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+            PreparedStatement pst = conn.prepareStatement("SELECT teacherId, grade, time, room FROM tl");
+            ResultSet rs = pst.executeQuery()
+        ) {
+            while (rs.next()) {
+                String teacherId = rs.getString("teacherId");
+                String grade = rs.getString("grade");
+                String time = rs.getString("time");
+                String room = rs.getString("room");
+
+                // Match the order of columns
+                model.addRow(new Object[]{teacherId, grade, time, room});
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+        }
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_showActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+        panel1.setVisible(false);
+        panel2.setVisible(false);
+        panel3.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
+
+      
+       
+      Search.addActionListener(e -> {
+  
+    
+  
+    String teacherIdInput = SearchT.getText().trim();
+
+    if (teacherIdInput.isEmpty()) {
+        JOptionPane.showMessageDialog(null, "Please enter a Teacher ID to search.");
+        return;
+    }
+
+    DefaultTableModel model = (DefaultTableModel) sched.getModel();
+    boolean found = false;
+
+    // Loop through the table to find the matching Teacher ID
+    for (int i = 0; i < model.getRowCount(); i++) {
+        String teacherIdInTable = model.getValueAt(i, 0).toString(); // Assuming teacherId is in column 0
+
+        if (teacherIdInTable.equals(teacherIdInput)) {
+            sched.setRowSelectionInterval(i, i); // Highlight the row
+            sched.scrollRectToVisible(sched.getCellRect(i, 0, true)); // Scroll to the row if it's not visible
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        JOptionPane.showMessageDialog(null, "No schedule found for Teacher ID: " + teacherIdInput);
+    }
+});
+
+
+
+
+        
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SearchActionPerformed
+
+    private void Search1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Search1ActionPerformed
+  String studentNoInput = SearchT1.getText().trim();
+
+    if (studentNoInput.isEmpty()) {
+        JOptionPane.showMessageDialog(null, "Please enter a Student No to search.");
+        return;
+    }
+
+    DefaultTableModel model = (DefaultTableModel) StudentTable.getModel();
+    boolean found = false;
+
+    for (int i = 0; i < model.getRowCount(); i++) {
+        String studentNoInTable = model.getValueAt(i, 1).toString(); // Column index 1 = Student ID
+
+        if (studentNoInTable.equals(studentNoInput)) {
+            StudentTable.setRowSelectionInterval(i, i);
+            StudentTable.scrollRectToVisible(StudentTable.getCellRect(i, 0, true));
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        JOptionPane.showMessageDialog(null, "No student found with Student No: " + studentNoInput);
+    }
+
+
+
+        
+        
+        
+        
+     
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Search1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -263,18 +501,31 @@ panel2.setVisible(true);
     private javax.swing.JLabel BG;
     private javax.swing.JLabel BG1;
     private javax.swing.JButton LoadStudent;
+    private javax.swing.JButton Search;
+    private javax.swing.JButton Search1;
+    private javax.swing.JTextField SearchT;
+    private javax.swing.JTextField SearchT1;
     private javax.swing.JTable StudentTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private java.awt.Panel panel1;
     private java.awt.Panel panel2;
+    private java.awt.Panel panel3;
+    private javax.swing.JTable sched;
+    private javax.swing.JButton show;
     // End of variables declaration//GEN-END:variables
 }
