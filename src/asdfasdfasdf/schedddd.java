@@ -4958,7 +4958,7 @@ public class schedddd extends javax.swing.JFrame {
                 ClearActionPerformed(evt);
             }
         });
-        getContentPane().add(Clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, -1, -1));
+        getContentPane().add(Clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
 
         jDay.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jDay.addActionListener(new java.awt.event.ActionListener() {
